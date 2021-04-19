@@ -1,0 +1,3 @@
+[submodule "Assets/TaskEditor"]
+	path = Assets/TaskEditor
+	url = ../../core/taskeditorscripts.git
