@@ -13,12 +13,12 @@ public class AJANAvatarBehavior : AvatarBehavior
     protected override void GUIBehaviorInput()
     {
         
-        if (GUI.Button(new Rect(10, 10, 120, 50), "Create Agent"))
+        if (GUI.Button(new Rect(10, 100, 120, 25), "Create Agent"))
         {
             ajan.createAgent();
         }
 
-        if (GUI.Button(new Rect(140, 10, 120, 50), "Execute Agent"))
+        if (GUI.Button(new Rect(140, 100, 120, 25), "Execute Agent"))
         {
             ajan.executeAgent();
         }

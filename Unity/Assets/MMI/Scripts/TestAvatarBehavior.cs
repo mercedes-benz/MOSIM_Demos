@@ -10,6 +10,8 @@ public class TestAvatarBehavior : AvatarBehavior
 {
     private string carryID;
 
+    private const int buttonHeight = 25;
+
     // Motion Types
     private readonly string MOTION_CARRY ="Object/Carry";
     private readonly string MOTION_GAZE = "Pose/Gaze";
@@ -24,7 +26,7 @@ public class TestAvatarBehavior : AvatarBehavior
 
     protected override void GUIBehaviorInput()
     {
-        if (GUI.Button(new Rect(10, 10, 120, 50), "Idle"))
+        if (GUI.Button(new Rect(10, 10, 120, buttonHeight), "Idle"))
         {
             MSkeletonAccess.Iface skeletonAccess = this.avatar.GetSkeletonAccess();
             skeletonAccess.SetChannelData(this.avatar.GetPosture());
@@ -42,7 +44,7 @@ public class TestAvatarBehavior : AvatarBehavior
         }
 
 
-        if (GUI.Button(new Rect(140, 10, 120, 50), "Walk to"))
+        if (GUI.Button(new Rect(140, 10, 120, buttonHeight), "Walk to"))
         {
             MInstruction walkInstruction = new MInstruction(MInstructionFactory.GenerateID(), "Walk", MOTION_WALK)
             {
@@ -67,7 +69,7 @@ public class TestAvatarBehavior : AvatarBehavior
         }
 
 
-        if (GUI.Button(new Rect(270, 10, 120, 50), "Reach Object"))
+        if (GUI.Button(new Rect(270, 10, 120, buttonHeight), "Reach Object"))
         {
 
             MInstruction idleInstruction = new MInstruction(MInstructionFactory.GenerateID(), "Idle", MOTION_IDLE);
@@ -93,7 +95,7 @@ public class TestAvatarBehavior : AvatarBehavior
         }
 
 
-        if (GUI.Button(new Rect(400, 10, 120, 50), "Move Object"))
+        if (GUI.Button(new Rect(400, 10, 120, buttonHeight), "Move Object"))
         {
             MInstruction idleInstruction = new MInstruction(MInstructionFactory.GenerateID(), "Idle", MOTION_IDLE);
 
@@ -108,7 +110,7 @@ public class TestAvatarBehavior : AvatarBehavior
         }
 
 
-        if (GUI.Button(new Rect(530, 10, 120, 50), "Pick-up"))
+        if (GUI.Button(new Rect(530, 10, 120, buttonHeight), "Pick-up"))
         {
             MInstruction idleInstruction = new MInstruction(MInstructionFactory.GenerateID(), "Idle", MOTION_IDLE);
 
@@ -132,7 +134,7 @@ public class TestAvatarBehavior : AvatarBehavior
 
         }
 
-        if (GUI.Button(new Rect(660, 10, 120, 50), "Carry Object"))
+        if (GUI.Button(new Rect(660, 10, 120, buttonHeight), "Carry Object"))
         {
             carryID = MInstructionFactory.GenerateID();
             MInstruction carryInstruction = new MInstruction(carryID, "carry object", MOTION_CARRY)
@@ -146,7 +148,7 @@ public class TestAvatarBehavior : AvatarBehavior
 
 
 
-        if (GUI.Button(new Rect(790, 10, 120, 50), "Release Object"))
+        if (GUI.Button(new Rect(790, 10, 120, buttonHeight), "Release Object"))
         {
             MInstruction releaseRight = new MInstruction(MInstructionFactory.GenerateID(), "release object", MOTION_RELEASE)
             {
@@ -164,7 +166,7 @@ public class TestAvatarBehavior : AvatarBehavior
         }
 
 
-        if (GUI.Button(new Rect(920, 10, 160, 50), "Concurrent scenario"))
+        if (GUI.Button(new Rect(10, 40, 160, buttonHeight), "Concurrent scenario"))
         {
 
             MInstruction walkInstruction1 = new MInstruction(MInstructionFactory.GenerateID(), "Walk", MOTION_WALK)
@@ -310,7 +312,7 @@ public class TestAvatarBehavior : AvatarBehavior
         }
 
 
-        if (GUI.Button(new Rect(10, 70, 220, 50), "Pickup large object"))
+        if (GUI.Button(new Rect(10, 70, 220, buttonHeight), "Pickup large object"))
         {
             MInstruction walkInstruction = new MInstruction(MInstructionFactory.GenerateID(), "Walk", MOTION_WALK)
             {
@@ -350,7 +352,7 @@ public class TestAvatarBehavior : AvatarBehavior
             this.CoSimulator.MSimulationEventHandler += this.CoSimulator_MSimulationEventHandler;
         }
 
-        if (GUI.Button(new Rect(240, 70, 220, 50), "Move Large Object both handed"))
+        if (GUI.Button(new Rect(240, 70, 220, buttonHeight), "Move Large Object both handed"))
         {
             MInstruction moveInstruction = new MInstruction(MInstructionFactory.GenerateID(), "move object", MOTION_MOVE)
             {
@@ -380,7 +382,7 @@ public class TestAvatarBehavior : AvatarBehavior
 
         }
 
-        if (GUI.Button(new Rect(470, 70, 220, 50), "Carry Object both handed"))
+        if (GUI.Button(new Rect(470, 70, 220, buttonHeight), "Carry Object both handed"))
         {
             carryID = MInstructionFactory.GenerateID();
             MInstruction carryInstruction = new MInstruction(carryID, "carry object", MOTION_CARRY)
@@ -391,7 +393,7 @@ public class TestAvatarBehavior : AvatarBehavior
             this.CoSimulator.AssignInstruction(carryInstruction, new MSimulationState() { Initial = this.avatar.GetPosture(), Current = this.avatar.GetPosture() });
         }
 
-        if (GUI.Button(new Rect(700, 70, 210, 50), "Reach Object Single"))
+        if (GUI.Button(new Rect(700, 70, 210, buttonHeight), "Reach Object Single"))
         {
 
             MInstruction idleInstruction = new MInstruction(MInstructionFactory.GenerateID(), "Idle", MOTION_IDLE);
@@ -412,7 +414,7 @@ public class TestAvatarBehavior : AvatarBehavior
 
         }
 
-        if (GUI.Button(new Rect(920, 70, 160, 50), "Abort"))
+        if (GUI.Button(new Rect(180, 40, 160, buttonHeight), "Abort"))
         {
             this.CoSimulator.Abort();
         }

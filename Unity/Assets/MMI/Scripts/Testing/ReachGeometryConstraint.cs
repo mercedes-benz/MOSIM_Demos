@@ -11,7 +11,7 @@ public class ReachGeometryConstraint : MonoBehaviour
 
     private void OnGUI()
     {
-        if (GUI.Button(new Rect(100, 150, 200, 50), "Reach (MConstraint)"))
+        if (GUI.Button(new Rect(270, 100, 200, 25), "Reach (MConstraint)"))
         {
 
             MConstraint reachConstraint = new MConstraint(System.Guid.NewGuid().ToString())

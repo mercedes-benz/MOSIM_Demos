@@ -1,3 +1,7 @@
+#Snapshot folder containing pictures of the parts and snaphot debug folder
+/Screenshots/
+/Weights/
+
 # Windows thumbnail cache files
 Thumbs.db
 Thumbs.db:encryptable

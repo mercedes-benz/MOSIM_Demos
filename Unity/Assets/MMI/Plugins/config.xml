@@ -1,0 +1,14 @@
+﻿<ArrayOfTPortsStruct xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TPortsStruct>
+    <port>80</port>
+    <preference>3</preference>
+  </TPortsStruct>
+  <TPortsStruct>
+    <port>8080</port>
+    <preference>2</preference>
+  </TPortsStruct>
+  <TPortsStruct>
+    <port>8081</port>
+    <preference>1</preference>
+  </TPortsStruct>
+</ArrayOfTPortsStruct>
