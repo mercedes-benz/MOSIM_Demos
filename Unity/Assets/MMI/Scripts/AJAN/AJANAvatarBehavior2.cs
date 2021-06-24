@@ -18,7 +18,7 @@
  * THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
  * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-
+ 
 using MMICoSimulation;
 using MMICSharp.MMIStandard.Utils;
 using MMIStandard;
@@ -27,19 +27,19 @@ using MMIUnity.TargetEngine.Scene;
 using UnityEngine;
 
 
-public class AJANAvatarBehavior : AvatarBehavior
+public class AJANAvatarBehavior2 : AvatarBehavior
 {
     public AJANAgent ajan;
 
     protected override void GUIBehaviorInput()
     {
         
-        if (GUI.Button(new Rect(10, 10, 120, 50), "Create Agent"))
+        if (GUI.Button(new Rect(10, 60, 120, 50), "Create Agent"))
         {
             ajan.createAgent();
         }
 
-        if (GUI.Button(new Rect(140, 10, 120, 50), "Execute Agent"))
+        if (GUI.Button(new Rect(140, 60, 120, 50), "Execute Agent"))
         {
             ajan.executeAgent();
         }
