@@ -2407,6 +2407,7 @@ GameObject:
   - component: {fileID: 194464018}
   - component: {fileID: 194464017}
   - component: {fileID: 194464016}
+  - component: {fileID: 194464019}
   m_Layer: 0
   m_Name: Walk Target2
   m_TagString: Untagged
@@ -2422,7 +2423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194464014}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.025, z: -1.981}
+  m_LocalPosition: {x: 0, y: 0.03, z: -1.981}
   m_LocalScale: {x: 0.049999997, y: 0.049999997, z: 0.049999997}
   m_Children: []
   m_Father: {fileID: 717469823}
@@ -2519,6 +2520,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194464014}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &194464019
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194464014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &197837081
 GameObject:
   m_ObjectHideFlags: 0
@@ -5375,6 +5389,7 @@ MonoBehaviour:
   m_Script: {fileID: -395816975, guid: 695580ec49533d245bd930e6c52617fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
   MainCamera: {fileID: 534669904}
   minxyz: {x: 0, y: 0, z: 0}
   maxxyz: {x: 0, y: 0, z: 0}
@@ -6880,7 +6895,7 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
-  Type: 0
+  Type: 2
   Tool: 
   InitialLocation: {fileID: 0}
   InitialLocationConstraint: 
@@ -8920,9 +8935,9 @@ MonoBehaviour:
   Tool: 
   InitialLocation: {fileID: 0}
   InitialLocationConstraint: 
-  FinalLocation: {fileID: 0}
+  FinalLocation: {fileID: 667682629}
   FinalLocationConstraint: 
-  IsLocatedAt: {fileID: 0}
+  IsLocatedAt: {fileID: 833879669}
   StationRef: 0
   GroupRef: 0
   Constraints: []
@@ -9070,7 +9085,7 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
-  Type: 0
+  Type: 2
   Tool: 
   InitialLocation: {fileID: 0}
   InitialLocationConstraint: 
@@ -9730,7 +9745,7 @@ MonoBehaviour:
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 12
-  TaskEditorID: 0
+  TaskEditorID: 487
   selectedConstraint: -1
   ConstraintsFile: 
   ShowCoordinateSystem: 0
@@ -9744,9 +9759,9 @@ MonoBehaviour:
   Tool: 
   InitialLocation: {fileID: 0}
   InitialLocationConstraint: 
-  FinalLocation: {fileID: 0}
+  FinalLocation: {fileID: 834936233}
   FinalLocationConstraint: 
-  IsLocatedAt: {fileID: 0}
+  IsLocatedAt: {fileID: 890030668}
   StationRef: 0
   GroupRef: 0
   Constraints: []
@@ -9824,8 +9839,8 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.1
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -16917,39 +16932,86 @@ MonoBehaviour:
   proxyHttps: 
   proxyPort: 
   proxyUser: 
-  taskEditorWWW: 
-  accessToken: 
+  taskEditorWWW: https://taskeditor.mosim.eu/api.php
+  accessToken: DGnHku9w8OirCFz9J-wrUW7uK9Hdf
   lastSyncConnection: 
-  connectionEstablished: 0
-  Products: []
+  connectionEstablished: 1
+  Products:
+  - {fileID: 890030668}
+  - {fileID: 833879669}
   Tools: []
   InitialLocations: []
-  FinalLocations: []
+  FinalLocations:
+  - {fileID: 834936233}
+  - {fileID: 667682629}
   WalkTargets: []
   mainCamera: {fileID: 0}
   photoCamera: {fileID: 0}
   target: {fileID: 0}
-  tasEditorProjectName: 
+  tasEditorProjectName: Pedal Car Assembly
   PictureUploadProgress: 101
   cameraScript: {fileID: 534669908}
-  stationsLoaded: 0
-  tasksLoaded: 0
+  stationsLoaded: 1
+  tasksLoaded: 1
   avatarJson:
   - id: 0
     stationid: 0
     localID: 1
     avatar: Avatar
-  workersJson: []
-  stationsJson: []
+  workersJson:
+  - id: 87
+    stationid: 29
+    avatarid: 0
+    worker: Andre
+    simulate: 1
+    syncstatus: 2
+  - id: 21
+    stationid: 29
+    avatarid: 0
+    worker: Default worker
+    simulate: 0
+    syncstatus: 2
+  stationsJson:
+  - id: 29
+    station: TestStation
   toolsJson:
-    projectName: 
-    projectID: 0
-    type: 
-    tools: []
-  stationID: 0
+    projectName: Pedal Car Assembly
+    projectID: 8
+    type: ToolTypes
+    tools:
+    - Left hand
+    - Right hand
+    - Both hands
+    - Scissors
+    - Wire cutter
+    - Cutter
+    - Wrench
+    - Cloth
+    - Compression tool
+    - Glue gun
+    - Soft hammer
+    - Rubber hammer
+    - Fitter's hammer
+    - Broom
+    - Clip tool
+    - Glue tube
+    - Screwdriver
+    - Ratchet
+    - EC screwdriver
+    - Cordless screwdriver
+    - Camera
+    - Eyes
+    - Template
+    - Scanner
+    - Vacuum Cleaner
+    - Hand
+    - RightHand
+    - LeftHand
+    - BothHands
+  stationID: 29
   parts:
   - name: Grasp Object
-    id: 0
+    id: 487
     localid: 12
   - name: Grasp Object2
     id: 6
@@ -22650,11 +22712,12 @@ MonoBehaviour:
   AJANPort: 8081
   AgentCLPort: 8083
   Repository: http://localhost:8090/rdf4j/repositories/agents
-  Report: 0
+  Report: 1
   Docker: 0
   AJANExecute: execute
   index: 0
   list:
+  - ExampleWalk Agent
   - Example Agent
   - ExamplePosition Agent
   - MOSIM Agent
