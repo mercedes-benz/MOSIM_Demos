@@ -177,7 +177,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 17
+  TaskEditorLocalID: 21
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -1122,7 +1122,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 11
+  TaskEditorLocalID: 15
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -2101,7 +2101,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 26
+  TaskEditorLocalID: 27
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -2597,7 +2597,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 28
+  TaskEditorLocalID: 29
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -2816,7 +2816,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 43
+  TaskEditorLocalID: 10
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -3493,7 +3493,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 41
+  TaskEditorLocalID: 8
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: Grasp Object31.json
@@ -3515,12 +3515,12 @@ MonoBehaviour:
   GroupRef: 0
   Constraints:
   - __isset:
-      GeometryConstraint: 1
+      GeometryConstraint: 0
       VelocityConstraint: 0
       AccelerationConstraint: 0
       PathConstraint: 0
       JointPathConstraint: 0
-      PostureConstraint: 0
+      PostureConstraint: 1
       JointConstraint: 0
       Properties: 1
   - __isset:
@@ -3541,6 +3541,15 @@ MonoBehaviour:
       PostureConstraint: 0
       JointConstraint: 0
       Properties: 0
+  - __isset:
+      GeometryConstraint: 1
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 0
+      JointConstraint: 0
+      Properties: 1
   MinXYZ: {x: 1, y: 0.2, z: 0.1}
   MaxXYZ: {x: 1, y: 0.5, z: 0.1}
   Rotation: {x: 0, y: 0, z: 0}
@@ -6227,7 +6236,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 25
+  TaskEditorLocalID: 26
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -7418,7 +7427,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 16
+  TaskEditorLocalID: 20
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -7774,7 +7783,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 19
+  TaskEditorLocalID: 23
   TaskEditorID: 6
   selectedConstraint: -1
   ConstraintsFile: 
@@ -7928,7 +7937,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 24
+  TaskEditorLocalID: 25
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -8536,7 +8545,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 30
+  TaskEditorLocalID: 31
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -8649,7 +8658,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 15
+  TaskEditorLocalID: 19
   TaskEditorID: 487
   selectedConstraint: -1
   ConstraintsFile: 
@@ -9434,7 +9443,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 31
+  TaskEditorLocalID: 32
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -10564,7 +10573,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 29
+  TaskEditorLocalID: 30
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -10965,7 +10974,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 13
+  TaskEditorLocalID: 17
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -11076,7 +11085,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 20
+  TaskEditorLocalID: 24
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -11995,7 +12004,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 18
+  TaskEditorLocalID: 22
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -14221,7 +14230,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 14
+  TaskEditorLocalID: 18
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -14734,7 +14743,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 12
+  TaskEditorLocalID: 16
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -14861,7 +14870,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 42
+  TaskEditorLocalID: 9
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -15569,7 +15578,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 10
+  TaskEditorLocalID: 14
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -15725,11 +15734,9 @@ MonoBehaviour:
   Tools: []
   InitialLocations:
   - {fileID: 429084811}
-  - {fileID: 0}
   - {fileID: 883803287}
   FinalLocations:
   - {fileID: 429084811}
-  - {fileID: 0}
   - {fileID: 834936233}
   - {fileID: 667682629}
   WalkTargets: []
@@ -15800,13 +15807,13 @@ MonoBehaviour:
   parts:
   - name: Grasp Object
     id: 487
-    localid: 15
+    localid: 19
   - name: Grasp Object2
     id: 6
-    localid: 19
+    localid: 23
   - name: Grasp Object3
     id: 0
-    localid: 41
+    localid: 8
 --- !u!4 &1649885968 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 948265044574663426, guid: 9696c76540f925f488848d37521b7f5e,
@@ -18910,7 +18917,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 9
+  TaskEditorLocalID: 13
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -19261,7 +19268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 50c8e4fdc5aaf114089bf33aef85f75a, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 50c8e4fdc5aaf114089bf33aef85f75a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19337,7 +19344,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 27
+  TaskEditorLocalID: 28
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: wrench.json
