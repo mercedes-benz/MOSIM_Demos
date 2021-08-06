@@ -30,7 +30,7 @@ using UnityEngine.Networking;
 public class SyncAJANEditorCall : MonoBehaviour
 {
     public MMISettings mmiSettings;
-    public string Repository = "http://localhost:8090/rdf4j/repositories/test_knowledge";
+    public string Repository = "http://localhost:8090/rdf4j/repositories/dummy_knowledge";
     public void CallAJAN()
     {
         string mObjects = GetAllMSceneObjects();
