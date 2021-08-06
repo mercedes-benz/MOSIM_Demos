@@ -59,7 +59,7 @@ public class AJANAgentEditor : Editor
         GUILayoutOption[] arrayList = new GUILayoutOption[] { };
         agent.index = EditorGUILayout.Popup("AgentTemplate", agent.index, agent.list.ToArray(), arrayList);
 
-        agent.AJANExecute = EditorGUILayout.TextField("Execute", agent.AJANExecute);
+        agent.AJANExecute = EditorGUILayout.TextField("Capability", agent.AJANExecute);
         // TODO: Commented to fix error
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Fields to define High-Level Tasklist", EditorStyles.boldLabel);

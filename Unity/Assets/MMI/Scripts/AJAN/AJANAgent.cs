@@ -236,6 +236,23 @@ public class AJANAgent : MonoBehaviour
         }
     }
 
+    public void sendEvent(string endpoint, MRDFGraph knowledge)
+    {
+        TTransport transport = new TSocket(AJANServer, AJANPort);
+        TProtocol protocol = new TBinaryProtocol(transport);
+        MAJANService.Client client = new MAJANService.Client(protocol);
+        transport.Open();
+
+        try
+        {
+            AgentURI = client.ExecuteAgent(name, endpoint, knowledge);
+        }
+        finally
+        {
+            transport.Close();
+        }
+    }
+
     private void deleteAgent()
     {
         TTransport transport = new TSocket(AJANServer, AJANPort);
