@@ -6092,7 +6092,67 @@ MonoBehaviour:
   FinalLocation: {fileID: 0}
   FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
-  RDF: 
+  RDF: "@prefix mosim: <http://www.dfki.de/mosim-ns#> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+    . @prefix ajan: <http://www.ajan.de/behavior/bt-ns#> . @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    . @prefix test: <http://test/> .  mosim:This mosim:repetitions \"5\" . mosim:This
+    mosim:angle \"60\" . mosim:This ajan:behavior <http://localhost:8090/rdf4j/repositories/behaviors#BT_0002d4fc-becf-49ce-91e3-817ef81f9e8d>
+    .  <http://localhost:8090/rdf4j/repositories/behaviors#BT_0002d4fc-becf-49ce-91e3-817ef81f9e8d>
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ajan.de/behavior/bt-ns#BehaviorTree>.
+    <http://localhost:8090/rdf4j/repositories/behaviors#BT_0002d4fc-becf-49ce-91e3-817ef81f9e8d>
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ajan.de/behavior/bt-ns#Root>.
+    <http://localhost:8090/rdf4j/repositories/behaviors#BT_0002d4fc-becf-49ce-91e3-817ef81f9e8d>
+    <http://www.ajan.de/behavior/bt-ns#hasChild> <http://localhost:8090/rdf4j/repositories/behaviors#Sequence-878667cb-fe17-48e1-93af-8df346716c83>.
+    <http://localhost:8090/rdf4j/repositories/behaviors#BT_0002d4fc-becf-49ce-91e3-817ef81f9e8d>
+    <http://www.w3.org/2000/01/rdf-schema#label> \"\"\"TurnBehavior\"\"\"^^xsd:string.
+    <http://localhost:8090/rdf4j/repositories/behaviors#Sequence-878667cb-fe17-48e1-93af-8df346716c83>
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ajan.de/behavior/bt-ns#Sequence>.
+    <http://localhost:8090/rdf4j/repositories/behaviors#Sequence-878667cb-fe17-48e1-93af-8df346716c83>
+    <http://www.ajan.de/behavior/bt-ns#hasChildren> _:b490. <http://localhost:8090/rdf4j/repositories/behaviors#Sequence-878667cb-fe17-48e1-93af-8df346716c83>
+    <http://www.w3.org/2000/01/rdf-schema#label> \"\"\"defaultSequence\"\"\"^^xsd:string.
+    _:b490 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2>.
+    _:b490 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+    <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2>
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ajan.de/behavior/bt-ns#Action>.
+    <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2>
+    <http://www.ajan.de/behavior/bt-ns#definition> <http://localhost:8090/rdf4j/repositories/services#AsyncMMUInstruction>.
+    <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2>
+    <http://www.ajan.de/behavior/bt-ns#evaluate> \"\"\"true\"\"\"^^xsd:boolean. <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2>
+    <http://www.ajan.de/behavior/bt-ns#inputs> _:b390. <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2>
+    <http://www.ajan.de/behavior/bt-ns#targetBase> <http://www.ajan.de/ajan-ns#AgentKnowledge>.
+    <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2>
+    <http://www.w3.org/2000/01/rdf-schema#comment> \"\"\"\"\"\"^^xsd:string. <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2>
+    <http://www.w3.org/2000/01/rdf-schema#label> \"\"\"turn(Object,Hand)\"\"\"^^xsd:string.
+    _:b390 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b265. _:b390 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>. _:b265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+    <http://www.ajan.de/behavior/bt-ns#ConstructQuery>. _:b265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+    <http://www.ajan.de/behavior/bt-ns#Input>. _:b265 <http://www.ajan.de/behavior/bt-ns#originBase>
+    <http://www.ajan.de/ajan-ns#AgentKnowledge>. _:b265 <http://www.ajan.de/behavior/bt-ns#sparql>
+    \"\"\" PREFIX mosim: <http://www.dfki.de/mosim-ns#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX test: <http://test/>  CONSTRUCT { \ttest:Instruction mosim:mmu \"Object/Turn\"
+    . \ttest:Instruction mosim:actionName \"TurnX\" .     test:Instruction mosim:mmuProperty
+    test:TargetProperty . \ttest:Instruction mosim:mmuProperty test:HandProperty
+    .     test:Instruction mosim:mmuProperty test:AngleProperty .     test:Instruction
+    mosim:mmuProperty test:RepetitionProperty .     test:Instruction mosim:mmuProperty
+    test:AxisProperty .     test:Instruction mosim:mmuProperty test:OnStart .  \ttest:TargetProperty
+    mosim:key \"SubjectID\" . \ttest:TargetProperty mosim:value ?tarId .  \ttest:HandProperty
+    mosim:key \"Hand\" . \ttest:HandProperty mosim:value ?hand .  \ttest:AxisProperty
+    mosim:key \"Axis\" . \ttest:AxisProperty mosim:value ?axisId .  \ttest:AngleProperty
+    mosim:key \"Angle\" . \ttest:AngleProperty mosim:value ?angle .      test:RepetitionProperty
+    mosim:key \"Repetitions\" .     test:RepetitionProperty mosim:value ?reps . 
+    \ttest:OnStart mosim:key \"OnStart\" . \ttest:OnStart mosim:value ?onStart . 
+    \t?cosim rdf:type mosim:CoSimulator . \t?cosim mosim:host ?host . \t?cosim mosim:port
+    ?port . } WHERE { \t?avatar rdf:type mosim:Avatar . \t?avatar mosim:hand ?hand
+    .  \ttest:PositionGoalPart rdf:value ?tool . \t?tool mosim:type ?targetName . 
+    \t?axis rdf:type mosim:MSceneObject .   \t?axis rdfs:label \"TurningAxis\" .
+    \t?axis mosim:id ?axisId .  \t?target rdf:type mosim:MSceneObject .   \t?target
+    rdfs:label ?targetName . \t?target mosim:id ?tarId . \t?target mosim:hasChild
+    ?axis .  \ttest:PositionGoalActionPoint rdf:value ?action .     ?action mosim:type
+    ?actionName .  \t?actionO rdf:type mosim:MSceneObject .   \t?actionO rdfs:label
+    ?actionName .     ?actionO mosim:angle ?angle . \t?actionO mosim:repetitions
+    ?reps .  \t?instruction rdf:type mosim:Instruction . \t?instruction mosim:instructionID
+    ?instId . \t?instruction mosim:mmu \"Pose/Idle\" .      BIND (CONCAT (STR(?instId),\":EndInstruction\")
+    as ?onStart)  \t?cosim rdf:type mosim:CoSimulator . \t?cosim mosim:host ?host
+    . \t?cosim mosim:port ?port . }\"\"\"^^xsd:string."
   StationRef: 0
   GroupRef: 0
   Constraints: []
@@ -7172,6 +7232,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908617136}
   m_Mesh: {fileID: 4300000, guid: dacacc1ffcc7bbd408e07417a076d01d, type: 3}
+--- !u!1 &918662233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 918662234}
+  - component: {fileID: 918662235}
+  m_Layer: 0
+  m_Name: TurningAxis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &918662234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918662233}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1213632331}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &918662235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918662233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MSceneObject:
+    __isset:
+      Collider: 0
+      Mesh: 0
+      PhysicsProperties: 0
+      Properties: 1
+      Attachments: 0
+      Constraints: 0
+  TaskEditorLocalID: 1
+  TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
+  ShowCoordinateSystem: 0
+  Velocity: {x: 0, y: 0, z: 0}
+  UpdatePhysicsCurrentFrame: 1
+  OverrideColor: 0
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  IgnoreCollision: 0
+  TransferMesh: 0
+  Type: 0
+  Tool: 
+  InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
+  FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
+  IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
+  Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &934351281
 GameObject:
   m_ObjectHideFlags: 0
@@ -9920,7 +10056,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.831, y: 0.93, z: -0.825}
   m_LocalScale: {x: 0.05, y: 0.1, z: 0.05}
-  m_Children: []
+  m_Children:
+  - {fileID: 918662234}
   m_Father: {fileID: 717469823}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17643,7 +17780,7 @@ MonoBehaviour:
   Report: 0
   Docker: 0
   AJANExecute: execute
-  index: 1
+  index: 3
   list:
   - ExampleWalk Agent
   - Example Agent
