@@ -48,9 +48,19 @@ public class AJANAgent : MonoBehaviour
     private MMIAvatar mmiAvatar;
 
     private string dockerHost = "host.docker.internal";
-    public int index = 0;
-    public List<string> list = new List<string>();
-    public Dictionary<string, string> templateList = new Dictionary<string, string>();
+    public int atIndex = 0;
+    public List<string> atList = new List<string>();
+    public List<AgentTemplate> templateList = new List<AgentTemplate>();
+
+    public class AgentTemplate
+    {
+        public string label;
+        public string uri;
+        public List<string> endpoints = new List<string>();
+    }
+
+    public int caIndex = 0;
+    public List<string> caList = new List<string>();
 
     // TODO: Commented to fix error
     [Header("Field to add High-Level Tasklist")]
@@ -84,8 +94,16 @@ public class AJANAgent : MonoBehaviour
 
     public void createAgent()
     {
-        Debug.Log(index);
-        AJANTemplate = templateList[list[index]];
+        Debug.Log(atIndex);
+        foreach (AgentTemplate entry in templateList)
+        {
+            if (entry.label.Equals(atList[atIndex]))
+            {
+                AJANTemplate = entry.uri;
+                break;
+            }
+
+        }
         Debug.Log(AJANTemplate);
         if (AJANTemplate != null)
         {
@@ -223,6 +241,9 @@ public class AJANAgent : MonoBehaviour
         MAJANService.Client client = new MAJANService.Client(protocol);
         transport.Open();
 
+        Debug.Log(caIndex);
+        AJANExecute = caList[caIndex];
+
         try
         {
             MRDFGraph knowledge = new MRDFGraph();
@@ -272,8 +293,25 @@ public class AJANAgent : MonoBehaviour
 
     public void Load()
     {
-        list.Clear();
+        atList.Clear();
         StartCoroutine(LoadTemplates());
+    }
+
+    public void SetCapabilities()
+    {
+        caList.Clear();
+        foreach (AgentTemplate entry in templateList)
+        {
+            if (entry.label.Equals(atList[atIndex]))
+            {
+                foreach(string endpoint in entry.endpoints)
+                {
+                    caList.Add(endpoint);
+                }
+                break;
+            }
+
+        }
     }
 
     IEnumerator LoadTemplates()
@@ -283,8 +321,8 @@ public class AJANAgent : MonoBehaviour
         query.Append("PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>").Append("\n");
         query.Append("PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>").Append("\n");
         query.Append("PREFIX ajan: <http://www.ajan.de/ajan-ns#>").Append("\n");
-        query.Append("SELECT ?label ?uri").Append("\n");
-        query.Append("WHERE {?uri rdf:type ajan:AgentTemplate. ?uri rdfs:label ?label.}");
+        query.Append("SELECT DISTINCT ?label ?uri ?capability").Append("\n");
+        query.Append("WHERE {?uri rdf:type ajan:AgentTemplate. ?uri rdfs:label ?label. ?uri ajan:endpoint ?endpoint. ?endpoint ajan:capability ?capability .}");
         form.AddField("query", query.ToString());
         using (UnityWebRequest www = UnityWebRequest.Post(Repository, form))
         {
@@ -303,9 +341,24 @@ public class AJANAgent : MonoBehaviour
                 for (int i = 1; i < lines.Length-1; i++)
                 {
                     string[] line = lines[i].Split(',');
-                    string template = line[1].Replace("\n", "").Replace("\r", "");
-                    templateList.Add(line[0], template);
-                    list.Add(line[0]);
+                    string label = line[0].Replace("\n", "").Replace("\r", "");
+                    AgentTemplate template = new AgentTemplate();
+                    foreach (AgentTemplate entry in templateList)
+                    {
+                        if (entry.label.Equals(label))
+                        {
+                            template = entry;
+                            break;
+                        }
+                    }
+                    if (template.label == null)
+                    {
+                        template.label = label;
+                        template.uri = line[1].Replace("\n", "").Replace("\r", "");
+                        templateList.Add(template);
+                        atList.Add(line[0]);
+                    }
+                    template.endpoints.Add(line[2].Replace("\n", "").Replace("\r", ""));
                 }
             }
         }

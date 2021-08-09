@@ -21,6 +21,7 @@
 
 using MMIUnity.TargetEngine;
 using MMIUnity.TargetEngine.Scene;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -56,10 +57,16 @@ public class AJANAgentEditor : Editor
             agent.Load();
         }
 
-        GUILayoutOption[] arrayList = new GUILayoutOption[] { };
-        agent.index = EditorGUILayout.Popup("AgentTemplate", agent.index, agent.list.ToArray(), arrayList);
+        GUILayoutOption[] atList = new GUILayoutOption[] { };
+        agent.atIndex = EditorGUILayout.Popup("AgentTemplate", agent.atIndex, agent.atList.ToArray(), atList);
+        agent.SetCapabilities();
 
-        agent.AJANExecute = EditorGUILayout.TextField("Capability", agent.AJANExecute);
+        GUILayoutOption[] caList = new GUILayoutOption[] { };
+        agent.caIndex = EditorGUILayout.Popup("Capability", agent.caIndex, agent.caList.ToArray(), caList);
+
+        //agent.AJANExecute = EditorGUILayout.TextField("Capability", agent.AJANExecute);
+
+
         // TODO: Commented to fix error
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Fields to define High-Level Tasklist", EditorStyles.boldLabel);
