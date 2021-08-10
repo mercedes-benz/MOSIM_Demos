@@ -6050,6 +6050,7 @@ GameObject:
   - component: {fileID: 791624579}
   - component: {fileID: 791624578}
   - component: {fileID: 791624577}
+  - component: {fileID: 791624581}
   m_Layer: 0
   m_Name: DrillPoint
   m_TagString: Untagged
@@ -6237,6 +6238,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791624575}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &791624581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791624575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb04116ae6196fa46836560eabce1fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: C:/Users/Andre_Antakli/Downloads/TurnBehavior_bt.ttl
+  breakdown: 
+  property: 
+  value: 
 --- !u!1 &793156535
 GameObject:
   m_ObjectHideFlags: 0
@@ -13223,7 +13240,7 @@ MonoBehaviour:
   photoCamera: {fileID: 0}
   target: {fileID: 0}
   tasEditorProjectName: My project
-  PictureUploadProgress: -1
+  PictureUploadProgress: 101
   gltfexporter: {fileID: 1635182286}
   cameraScript: {fileID: 534669908}
   stationsLoaded: 1
@@ -17798,12 +17815,15 @@ MonoBehaviour:
   Report: 0
   Docker: 0
   AJANExecute: execute
-  index: 3
-  list:
+  atIndex: 3
+  atList:
   - ExampleWalk Agent
   - Example Agent
   - ExamplePosition Agent
   - MOSIM Agent
+  caIndex: 0
+  caList:
+  - execute
   TaskList: 1
   WorkerId: -1
 --- !u!114 &7341640644656884278
