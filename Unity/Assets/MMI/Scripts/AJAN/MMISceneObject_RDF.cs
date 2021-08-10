@@ -15,10 +15,10 @@ public class MMISceneObject_RDF : MonoBehaviour
     public string path;
     public string breakdown;
 
+    private StringBuilder RDFProperties = new StringBuilder();
     public string property;
     public string value;
     public string sProperties;
-    public Dictionary<string, string> properties = new Dictionary<string, string>();
 
     void OnEnable()
     {
@@ -27,19 +27,14 @@ public class MMISceneObject_RDF : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(path);
-        Debug.Log(msObject.MSceneObject.Properties.Count);
         if (!msObject.MSceneObject.Properties.ContainsKey("RDF"))
         {
             string RDF = GetRDF();
-            Debug.Log(RDF);
             if (RDF.Length > 0)
             {
-                Debug.Log("Load RDF stuff");
                 msObject.MSceneObject.Properties.Add("RDF", RDF);
             }
         }
-        Debug.Log(msObject.MSceneObject.Properties.Count);
     }
 
     private string GetRDF()
@@ -47,16 +42,15 @@ public class MMISceneObject_RDF : MonoBehaviour
         StringBuilder RDF = new StringBuilder();
         if (path.Length > 0)
         {
-            RDF.Append("@prefix mosim: <http://www.dfki.de/mosim-ns#>.");
-            RDF.Append("@prefix bt: <http://www.ajan.de/behavior/bt-ns#>.");
             StreamReader reader = new StreamReader(path);
             breakdown = reader.ReadToEnd();
             reader.Close();
             string root = GetRoot(breakdown);
-            Debug.Log(root);
             if (root != null)
             {
-                RDF.Append("mosim:This bt:behavior <" + GetRoot(breakdown) + "> .");
+                RDF.Append("@prefix mosim: <http://www.dfki.de/mosim-ns#>. \n");
+                RDF.Append("@prefix bt: <http://www.ajan.de/behavior/bt-ns#>. \n");
+                RDF.Append("mosim:This bt:behavior <" + GetRoot(breakdown) + "> . \n");
                 RDF.Append(breakdown);
             }
         }
@@ -66,33 +60,22 @@ public class MMISceneObject_RDF : MonoBehaviour
 
     public void AddProperty()
     {
-        properties.Add("mosim:" + this.property, this.value);
+        if (RDFProperties.Length == 0 && sProperties.Equals(""))
+        {
+            RDFProperties.Append("@prefix mosim: <http://www.dfki.de/mosim-ns#>. \n");
+        } else if (RDFProperties.Length == 0 && !sProperties.Equals(""))
+        {
+            RDFProperties.Append(sProperties);
+        }
+        RDFProperties.Append("mosim:This mosim:" + property + " '" + value + "' . \n");
         this.property = null;
         this.value = null;
-        sProperties = ReadProperties(properties);
-    }
-
-    private string ReadProperties(Dictionary<string, string> data)
-    {
-        StringBuilder RDF = new StringBuilder();
-        if (data.Count > 0)
-        {
-            RDF.Append("@prefix mosim: <http://www.dfki.de/mosim-ns#>. \n");
-            foreach (KeyValuePair<string, string> entry in data)
-            {
-                RDF.Append("mosim:This " + entry.Key + " '" + entry.Value + "' . \n");
-            }
-            return RDF.ToString();
-        }
-        else
-        {
-            return "";
-        }
+        sProperties = RDFProperties.ToString();
     }
 
     public void ClearProperties()
     {
-        properties.Clear();
+        RDFProperties.Clear();
         sProperties = "";
     }
 

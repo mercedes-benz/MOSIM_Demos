@@ -11,7 +11,7 @@ public class MMISceneObject_RDFEditor : Editor
     {
         MMISceneObject_RDF msObject = (MMISceneObject_RDF)target;
         
-        EditorGUILayout.LabelField("Selected Behavior: ", EditorStyles.boldLabel);
+        EditorGUILayout.LabelField("Selected Interaction Behavior: ", EditorStyles.boldLabel);
         if (GUILayout.Button("Select a Breakdown"))
         {
             msObject.path = EditorUtility.OpenFilePanel("Select Breakdown", "", "ttl");
@@ -32,24 +32,23 @@ public class MMISceneObject_RDFEditor : Editor
         EditorGUILayout.Space();
 
         EditorGUILayout.LabelField("RDF Properties: ", EditorStyles.boldLabel);
-        StringReader strReader = new StringReader(msObject.sProperties);
-        while (true)
+        if (msObject.sProperties != null)
         {
-            string aLine = strReader.ReadLine();
-            if (aLine != null)
+            StringReader strReader = new StringReader(msObject.sProperties);
+            while (true)
             {
-                EditorGUILayout.LabelField(aLine);
-            }
-            else
-            {
-                break;
+                string aLine = strReader.ReadLine();
+                if (aLine != null)
+                {
+                    EditorGUILayout.LabelField(aLine);
+                }
+                else
+                {
+                    break;
+                }
             }
         }
-        /*foreach (KeyValuePair<string, string> entry in msObject.properties)
-        {
-            EditorGUILayout.LabelField("mosim:This " + entry.Key + " '" + entry.Value + "' .");
-        }
-        msObject.sProperties = EditorGUILayout.TextField("RDF", msObject.sProperties);*/
+        
         if (GUILayout.Button("Clear Properties"))
         {
             msObject.ClearProperties();

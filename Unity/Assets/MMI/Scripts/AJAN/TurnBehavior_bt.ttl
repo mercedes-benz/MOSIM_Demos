@@ -1,0 +1,71 @@
+# Root: <http://localhost:8090/rdf4j/repositories/behaviors#BT_0002d4fc-becf-49ce-91e3-817ef81f9e8d> @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . <http://localhost:8090/rdf4j/repositories/behaviors#BT_0002d4fc-becf-49ce-91e3-817ef81f9e8d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ajan.de/behavior/bt-ns#BehaviorTree>. <http://localhost:8090/rdf4j/repositories/behaviors#BT_0002d4fc-becf-49ce-91e3-817ef81f9e8d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ajan.de/behavior/bt-ns#Root>. <http://localhost:8090/rdf4j/repositories/behaviors#BT_0002d4fc-becf-49ce-91e3-817ef81f9e8d> <http://www.ajan.de/behavior/bt-ns#hasChild> <http://localhost:8090/rdf4j/repositories/behaviors#Sequence-878667cb-fe17-48e1-93af-8df346716c83>. <http://localhost:8090/rdf4j/repositories/behaviors#BT_0002d4fc-becf-49ce-91e3-817ef81f9e8d> <http://www.w3.org/2000/01/rdf-schema#label> """TurnBehavior"""^^xsd:string. <http://localhost:8090/rdf4j/repositories/behaviors#Sequence-878667cb-fe17-48e1-93af-8df346716c83> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ajan.de/behavior/bt-ns#Sequence>. <http://localhost:8090/rdf4j/repositories/behaviors#Sequence-878667cb-fe17-48e1-93af-8df346716c83> <http://www.ajan.de/behavior/bt-ns#hasChildren> _:b494. <http://localhost:8090/rdf4j/repositories/behaviors#Sequence-878667cb-fe17-48e1-93af-8df346716c83> <http://www.w3.org/2000/01/rdf-schema#label> """defaultSequence"""^^xsd:string. _:b494 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2>. _:b494 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>. <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ajan.de/behavior/bt-ns#Action>. <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2> <http://www.ajan.de/behavior/bt-ns#definition> <http://localhost:8090/rdf4j/repositories/services#AsyncMMUInstruction>. <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2> <http://www.ajan.de/behavior/bt-ns#evaluate> """true"""^^xsd:boolean. <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2> <http://www.ajan.de/behavior/bt-ns#inputs> _:b393. <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2> <http://www.ajan.de/behavior/bt-ns#targetBase> <http://www.ajan.de/ajan-ns#AgentKnowledge>. <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2> <http://www.w3.org/2000/01/rdf-schema#comment> """"""^^xsd:string. <http://localhost:8090/rdf4j/repositories/behaviors#Action-e61acf00-4b6b-4cdb-abaf-e764311fe1e2> <http://www.w3.org/2000/01/rdf-schema#label> """turn(Object,Hand)"""^^xsd:string. _:b393 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b352. _:b393 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>. _:b352 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ajan.de/behavior/bt-ns#ConstructQuery>. _:b352 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ajan.de/behavior/bt-ns#Input>. _:b352 <http://www.ajan.de/behavior/bt-ns#originBase> <http://www.ajan.de/ajan-ns#AgentKnowledge>. _:b352 <http://www.ajan.de/behavior/bt-ns#sparql> """
+PREFIX mosim: <http://www.dfki.de/mosim-ns#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX test: <http://test/>
+
+CONSTRUCT {
+	test:Instruction mosim:mmu "Object/Turn" .
+	test:Instruction mosim:actionName "TurnX" .
+    test:Instruction mosim:mmuProperty test:TargetProperty .
+	test:Instruction mosim:mmuProperty test:HandProperty .
+    test:Instruction mosim:mmuProperty test:AngleProperty .
+    test:Instruction mosim:mmuProperty test:RepetitionProperty .
+    test:Instruction mosim:mmuProperty test:AxisProperty .
+    test:Instruction mosim:mmuProperty test:OnStart .
+
+	test:TargetProperty mosim:key "SubjectID" .
+	test:TargetProperty mosim:value ?tarId .
+
+	test:HandProperty mosim:key "Hand" .
+	test:HandProperty mosim:value ?hand .
+
+	test:AxisProperty mosim:key "Axis" .
+	test:AxisProperty mosim:value ?axisId .
+
+	test:AngleProperty mosim:key "Angle" .
+	test:AngleProperty mosim:value ?angle .
+
+    test:RepetitionProperty mosim:key "Repetitions" .
+    test:RepetitionProperty mosim:value ?reps .
+
+	test:OnStart mosim:key "OnStart" .
+	test:OnStart mosim:value ?onStart .
+
+	?cosim rdf:type mosim:CoSimulator .
+	?cosim mosim:host ?host .
+	?cosim mosim:port ?port .
+}
+WHERE {
+	?avatar rdf:type mosim:Avatar .
+	?avatar mosim:hand ?hand .
+
+	test:PositionGoalPart rdf:value ?tool .
+	?tool mosim:type ?targetName .
+
+	?target rdf:type mosim:MSceneObject .
+  	?target rdfs:label ?targetName .
+	?target mosim:id ?tarId .
+        ?target mosim:hasChild ?axis .
+
+	?axis rdf:type mosim:MSceneObject .
+  	?axis rdfs:label "TurningAxis" .
+	?axis mosim:id ?axisId .
+
+	test:PositionGoalActionPoint rdf:value ?action .
+    ?action mosim:type ?actionName .
+
+	?actionO rdf:type mosim:MSceneObject .
+  	?actionO rdfs:label ?actionName .
+    ?actionO mosim:angle ?angle .
+	?actionO mosim:repetitions ?reps .
+
+	?instruction rdf:type mosim:Instruction .
+	?instruction mosim:instructionID ?instId .
+	?instruction mosim:mmu "Pose/Idle" .
+
+    BIND (CONCAT (STR(?instId),":EndInstruction") as ?onStart)
+
+	?cosim rdf:type mosim:CoSimulator .
+	?cosim mosim:host ?host .
+	?cosim mosim:port ?port .
+}"""^^xsd:string.

@@ -6250,10 +6250,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb04116ae6196fa46836560eabce1fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: C:/Users/Andre_Antakli/Downloads/TurnBehavior_bt.ttl
+  path: D:/Projects/MOSIM/Repos/MOSIM_Demos/Unity/Assets/MMI/Scripts/AJAN/TurnBehavior_bt.ttl
   breakdown: 
   property: 
   value: 
+  sProperties: "@prefix mosim: <http://www.dfki.de/mosim-ns#>. \nmosim:This mosim:angle
+    '60' . \nmosim:This mosim:repetitions '5' . \n"
 --- !u!1 &793156535
 GameObject:
   m_ObjectHideFlags: 0
