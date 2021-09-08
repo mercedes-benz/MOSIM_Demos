@@ -24,6 +24,7 @@ using MMICSharp.MMIStandard.Utils;
 using MMIStandard;
 using MMIUnity.TargetEngine;
 using MMIUnity.TargetEngine.Scene;
+using System.Text;
 using UnityEngine;
 
 
@@ -37,6 +38,7 @@ public class AJANAvatarBehavior : AvatarBehavior
         if (GUI.Button(new Rect(10, 10, 120, 50), "Create Agent"))
         {
             ajan.createAgent();
+            GetAllMSceneObjects();
         }
 
         if (GUI.Button(new Rect(140, 10, 120, 50), "Execute Agent"))
@@ -46,8 +48,20 @@ public class AJANAvatarBehavior : AvatarBehavior
 
     }
 
-
-
+    private void GetAllMSceneObjects()
+    {
+        GameObject[] allObjects = FindObjectsOfType<GameObject>();
+        int i = 0;
+        foreach (GameObject obj in allObjects)
+        {
+            MMISceneObject CC = obj.GetComponent<MMISceneObject>();
+            if (CC != null)
+            {
+                Debug.Log(CC.MSceneObject.Name);
+                Debug.Log(CC.MSceneObject.ID);
+            }
+        }
+    }
 
     /// <summary>
     /// Callback for the co-simulation event handler
