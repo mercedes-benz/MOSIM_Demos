@@ -1211,7 +1211,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190170242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.269, y: 1.038, z: 0}
+  m_LocalPosition: {x: -0.269, y: 1.025, z: 0}
   m_LocalScale: {x: 0.1, y: 0.05, z: 0.1}
   m_Children: []
   m_Father: {fileID: 717469823}
@@ -1300,7 +1300,7 @@ MonoBehaviour:
   TaskEditorLocalID: 10
   TaskEditorID: 0
   selectedConstraint: -1
-  ConstraintsFile: 
+  ConstraintsFile: Block_2.json
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -1320,7 +1320,16 @@ MonoBehaviour:
   RDF: 
   StationRef: 0
   GroupRef: 0
-  Constraints: []
+  Constraints:
+  - __isset:
+      GeometryConstraint: 1
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 0
+      JointConstraint: 0
+      Properties: 1
   MinXYZ: {x: 1, y: 0.2, z: 0.1}
   MaxXYZ: {x: 1, y: 0.5, z: 0.1}
   Rotation: {x: 0, y: 0, z: 0}
@@ -2247,13 +2256,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366731981}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.138, z: 0}
   m_LocalScale: {x: 0.15, y: 0.075, z: 0.15}
   m_Children: []
   m_Father: {fileID: 1702419621}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &366731983
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3154,13 +3163,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514441991}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.251, z: 0}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 1702419621}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &526361907
 GameObject:
   m_ObjectHideFlags: 0
@@ -5288,7 +5297,7 @@ MonoBehaviour:
   TaskEditorLocalID: 8
   TaskEditorID: 0
   selectedConstraint: -1
-  ConstraintsFile: 
+  ConstraintsFile: Block_0.json
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -5308,7 +5317,16 @@ MonoBehaviour:
   RDF: 
   StationRef: 0
   GroupRef: 0
-  Constraints: []
+  Constraints:
+  - __isset:
+      GeometryConstraint: 1
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 0
+      JointConstraint: 0
+      Properties: 1
   MinXYZ: {x: 1, y: 0.2, z: 0.1}
   MaxXYZ: {x: 1, y: 0.5, z: 0.1}
   Rotation: {x: 0, y: 0, z: 0}
@@ -10302,13 +10320,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635182282}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 299999410, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToExport: {fileID: 0}
-  ExportFileName: CutPoint
+  ObjectToExport: {fileID: 2075643464}
+  ExportFileName: Block_3
   gltf:
     asset:
       version: 2.0
@@ -10319,25 +10337,25 @@ MonoBehaviour:
     - name: My scene
       nodes: 00000000
     nodes:
-    - name: CutPoint
+    - name: Block_3
       mesh: 0
       children: 
       rotation:
       - 0
+      - -1
       - -0
-      - -0
-      - 1
-      scale:
-      - 0.5
-      - 0.1
-      - 0.3
-      translation:
-      - 0.212
       - 0
-      - -0.42
+      scale:
+      - 0.05
+      - 0.05
+      - 0.05
+      translation:
+      - -0.268
+      - 1.025
+      - 0.316
       extras:
-        TaskEditorLocalID: 3
-        TaskEditorID: 775
+        TaskEditorLocalID: 15
+        TaskEditorID: 0
         Type: Part
         Tool: 
         StationRef: 0
@@ -11414,13 +11432,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765263589}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.268, y: 1.025, z: -0.208}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 717469823}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1765263591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14055,13 +14073,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075643459}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.268, y: 1.025, z: 0.316}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 717469823}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2075643461
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14145,7 +14163,7 @@ MonoBehaviour:
   TaskEditorLocalID: 15
   TaskEditorID: 0
   selectedConstraint: -1
-  ConstraintsFile: 
+  ConstraintsFile: Block_3.json
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -14165,7 +14183,25 @@ MonoBehaviour:
   RDF: 
   StationRef: 0
   GroupRef: 0
-  Constraints: []
+  Constraints:
+  - __isset:
+      GeometryConstraint: 1
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 0
+      JointConstraint: 0
+      Properties: 1
+  - __isset:
+      GeometryConstraint: 1
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 0
+      JointConstraint: 0
+      Properties: 1
   MinXYZ: {x: 1, y: 0.2, z: 0.1}
   MaxXYZ: {x: 1, y: 0.5, z: 0.1}
   Rotation: {x: 0, y: 0, z: 0}
@@ -14600,13 +14636,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138737101}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.282, y: 1.04, z: -0.205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.282, y: 1.037, z: -0.205}
   m_LocalScale: {x: 0.15, y: 0.075, z: 0.15}
   m_Children: []
   m_Father: {fileID: 717469823}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2138737103
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14690,7 +14726,7 @@ MonoBehaviour:
   TaskEditorLocalID: 9
   TaskEditorID: 0
   selectedConstraint: -1
-  ConstraintsFile: 
+  ConstraintsFile: Block_1.json
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -14710,10 +14746,111 @@ MonoBehaviour:
   RDF: 
   StationRef: 0
   GroupRef: 0
-  Constraints: []
+  Constraints:
+  - __isset:
+      GeometryConstraint: 1
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 0
+      JointConstraint: 0
+      Properties: 1
   MinXYZ: {x: 1, y: 0.2, z: 0.1}
   MaxXYZ: {x: 1, y: 0.5, z: 0.1}
   Rotation: {x: 0, y: 0, z: 0}
+--- !u!1 &2146824773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2146824775}
+  - component: {fileID: 2146824774}
+  m_Layer: 0
+  m_Name: Spot Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &2146824774
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146824773}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 84
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &2146824775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146824773}
+  m_LocalRotation: {x: 0.414102, y: 0.35341322, z: 0.28583342, w: 0.7886177}
+  m_LocalPosition: {x: -5.014, y: 3.05, z: -5.22}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 26.814001, y: 62.851, z: 56.419003}
 --- !u!1001 &948265043918944285
 PrefabInstance:
   m_ObjectHideFlags: 0
