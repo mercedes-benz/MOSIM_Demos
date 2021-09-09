@@ -1,0 +1,83 @@
+[
+  {
+    "__isset": {
+      "GeometryConstraint": true,
+      "VelocityConstraint": false,
+      "AccelerationConstraint": false,
+      "PathConstraint": false,
+      "JointPathConstraint": false,
+      "PostureConstraint": false,
+      "JointConstraint": false,
+      "Properties": true
+    },
+    "ID": "ReachingPointR",
+    "GeometryConstraint": {
+      "__isset": {
+        "ParentToConstraint": true,
+        "TranslationConstraint": true,
+        "RotationConstraint": false,
+        "WeightingFactor": true
+      },
+      "ParentObjectID": "9",
+      "ParentToConstraint": {
+        "__isset": {
+          "Parent": true
+        },
+        "ID": "08216c03-7f7a-4d77-a7cb-684594ae7ca8",
+        "Position": {
+          "X": 0.0907975286245346,
+          "Y": -0.0021228790283203125,
+          "Z": -0.12947559356689453
+        },
+        "Rotation": {
+          "X": 0.030940752476453781,
+          "Y": -0.71346867084503174,
+          "Z": -0.699927806854248,
+          "W": -0.010305034928023815
+        },
+        "Parent": "9"
+      },
+      "TranslationConstraint": {
+        "Type": 0,
+        "Limits": {
+          "X": {
+            "Min": 0.0,
+            "Max": 0.0
+          },
+          "Y": {
+            "Min": 0.0,
+            "Max": 0.0
+          },
+          "Z": {
+            "Min": 0.0,
+            "Max": 0.0
+          }
+        }
+      },
+      "RotationConstraint": {
+        "Limits": {
+          "X": {
+            "Min": 0.0,
+            "Max": 0.0
+          },
+          "Y": {
+            "Min": 0.0,
+            "Max": 0.0
+          },
+          "Z": {
+            "Min": 0.0,
+            "Max": 0.0
+          }
+        }
+      },
+      "WeightingFactor": 1.0
+    },
+    "VelocityConstraint": null,
+    "AccelerationConstraint": null,
+    "PathConstraint": null,
+    "JointPathConstraint": null,
+    "PostureConstraint": null,
+    "JointConstraint": null,
+    "Properties": {}
+  }
+]
