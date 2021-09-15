@@ -961,6 +961,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
@@ -1351,6 +1353,133 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &172074309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 172074313}
+  - component: {fileID: 172074312}
+  - component: {fileID: 172074311}
+  - component: {fileID: 172074310}
+  m_Layer: 0
+  m_Name: Ratchet_PF_WalkTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &172074310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172074309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MSceneObject:
+    __isset:
+      Collider: 0
+      Mesh: 0
+      PhysicsProperties: 0
+      Properties: 1
+      Attachments: 0
+      Constraints: 0
+  TaskEditorLocalID: 11
+  TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
+  ShowCoordinateSystem: 0
+  Velocity: {x: 0, y: 0, z: 0}
+  UpdatePhysicsCurrentFrame: 1
+  OverrideColor: 0
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  IgnoreCollision: 0
+  TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
+  Type: 3
+  Tool: 
+  InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
+  FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
+  IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
+  Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
+--- !u!23 &172074311
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172074309}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1019000906}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &172074312
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172074309}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &172074313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172074309}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 2.7849998, y: -4.4500003, z: -1.4350002}
+  m_LocalScale: {x: 0.09999992, y: 0.10000002, z: 0.09999992}
+  m_Children: []
+  m_Father: {fileID: 2104910323}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &180623117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,6 +1626,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
@@ -2196,6 +2327,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
@@ -2503,7 +2636,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 3
+  TaskEditorLocalID: 8
   TaskEditorID: 775
   selectedConstraint: -1
   ConstraintsFile: CutPoint.json
@@ -2514,6 +2647,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 5
   Tool: 
   InitialLocation: {fileID: 0}
@@ -2636,7 +2771,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 8
+  TaskEditorLocalID: 13
   TaskEditorID: 774
   selectedConstraint: -1
   ConstraintsFile: Grasp Object31.json
@@ -2647,6 +2782,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 5
   Tool: 
   InitialLocation: {fileID: 0}
@@ -4059,7 +4196,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 5
+  TaskEditorLocalID: 3
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -4070,6 +4207,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 3
   Tool: 
   InitialLocation: {fileID: 0}
@@ -4139,8 +4278,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547302290}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 2.7450004, y: -4.47, z: -1.1300005}
-  m_LocalScale: {x: 0.09999992, y: 0.10000002, z: 0.09999992}
+  m_LocalPosition: {x: 2.7450004, y: -4.4700003, z: -1.1300005}
+  m_LocalScale: {x: 0.099999905, y: 0.10000002, z: 0.099999905}
   m_Children: []
   m_Father: {fileID: 2026284468}
   m_RootOrder: 0
@@ -4967,6 +5106,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 2
   Tool: 
   InitialLocation: {fileID: 0}
@@ -5385,10 +5526,14 @@ Transform:
   - {fileID: 294420660}
   - {fileID: 1047225356}
   - {fileID: 1199925304}
-  - {fileID: 1213632331}
+  - {fileID: 2019583096}
   - {fileID: 2026284468}
   - {fileID: 1044186700}
   - {fileID: 707525542}
+  - {fileID: 1707261672}
+  - {fileID: 1020140638}
+  - {fileID: 793329996}
+  - {fileID: 2104910323}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6093,7 +6238,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 14
+  TaskEditorLocalID: 17
   TaskEditorID: 776
   selectedConstraint: -1
   ConstraintsFile: 
@@ -6104,6 +6249,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 5
   Tool: 
   InitialLocation: {fileID: 0}
@@ -6342,6 +6489,152 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!1 &793329995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793329996}
+  - component: {fileID: 793329998}
+  - component: {fileID: 793329997}
+  - component: {fileID: 793329999}
+  m_Layer: 0
+  m_Name: Ratchet_PositionInitial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &793329996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793329995}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.783, y: 0.913, z: -1.596}
+  m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 0.19999999}
+  m_Children:
+  - {fileID: 1992750383}
+  m_Father: {fileID: 717469823}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &793329997
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793329995}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 960003404}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &793329998
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793329995}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &793329999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793329995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MSceneObject:
+    __isset:
+      Collider: 0
+      Mesh: 0
+      PhysicsProperties: 0
+      Properties: 1
+      Attachments: 0
+      Constraints: 0
+  TaskEditorLocalID: 15
+  TaskEditorID: 759
+  selectedConstraint: -1
+  ConstraintsFile: Grasp Object31.json
+  ShowCoordinateSystem: 0
+  Velocity: {x: 0, y: 0, z: 0}
+  UpdatePhysicsCurrentFrame: 1
+  OverrideColor: 0
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  IgnoreCollision: 0
+  TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
+  Type: 1
+  Tool: Wrench
+  InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
+  FinalLocation: {fileID: 834936233}
+  FinalLocationConstraint: 
+  IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
+  Constraints:
+  - __isset:
+      GeometryConstraint: 1
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 0
+      JointConstraint: 0
+      Properties: 1
+  - __isset:
+      GeometryConstraint: 0
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 1
+      JointConstraint: 0
+      Properties: 1
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &799370470
 GameObject:
   m_ObjectHideFlags: 0
@@ -6565,6 +6858,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 5
   Tool: 
   InitialLocation: {fileID: 0}
@@ -6704,6 +6999,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 2
   Tool: 
   InitialLocation: {fileID: 0}
@@ -7003,6 +7300,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 5
   Tool: 
   InitialLocation: {fileID: 0}
@@ -7269,82 +7568,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908617136}
   m_Mesh: {fileID: 4300000, guid: dacacc1ffcc7bbd408e07417a076d01d, type: 3}
---- !u!1 &918662233
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 918662234}
-  - component: {fileID: 918662235}
-  m_Layer: 0
-  m_Name: TurningAxis
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &918662234
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918662233}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1213632331}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &918662235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918662233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MSceneObject:
-    __isset:
-      Collider: 0
-      Mesh: 0
-      PhysicsProperties: 0
-      Properties: 1
-      Attachments: 0
-      Constraints: 0
-  TaskEditorLocalID: 1
-  TaskEditorID: 0
-  selectedConstraint: -1
-  ConstraintsFile: 
-  ShowCoordinateSystem: 0
-  Velocity: {x: 0, y: 0, z: 0}
-  UpdatePhysicsCurrentFrame: 1
-  OverrideColor: 0
-  Color: {r: 0, g: 0, b: 0, a: 0}
-  IgnoreCollision: 0
-  TransferMesh: 0
-  Type: 0
-  Tool: 
-  InitialLocation: {fileID: 0}
-  InitialLocationConstraint: 
-  FinalLocation: {fileID: 0}
-  FinalLocationConstraint: 
-  IsLocatedAt: {fileID: 0}
-  RDF: 
-  StationRef: 0
-  GroupRef: 0
-  Constraints: []
-  MinXYZ: {x: 1, y: 0.2, z: 0.1}
-  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
-  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &934351281
 GameObject:
   m_ObjectHideFlags: 0
@@ -7675,6 +7898,84 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0.99999994}
     - _EmissionColorUI: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColorWithMapUI: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &968520533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 968520534}
+  - component: {fileID: 968520535}
+  m_Layer: 0
+  m_Name: TurningAxis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &968520534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968520533}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2019583096}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &968520535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968520533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MSceneObject:
+    __isset:
+      Collider: 0
+      Mesh: 0
+      PhysicsProperties: 0
+      Properties: 1
+      Attachments: 0
+      Constraints: 0
+  TaskEditorLocalID: 7
+  TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
+  ShowCoordinateSystem: 0
+  Velocity: {x: 0, y: 0, z: 0}
+  UpdatePhysicsCurrentFrame: 1
+  OverrideColor: 0
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  IgnoreCollision: 0
+  TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
+  Type: 0
+  Tool: 
+  InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
+  FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
+  IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
+  Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &968631932
 GameObject:
   m_ObjectHideFlags: 0
@@ -8166,6 +8467,165 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019827271}
   m_Mesh: {fileID: 4300000, guid: dacacc1ffcc7bbd408e07417a076d01d, type: 3}
+--- !u!1 &1020140637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1020140638}
+  - component: {fileID: 1020140642}
+  - component: {fileID: 1020140641}
+  - component: {fileID: 1020140640}
+  - component: {fileID: 1020140639}
+  m_Layer: 0
+  m_Name: Ratchet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1020140638
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020140637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.83, y: 0.93, z: -1.629}
+  m_LocalScale: {x: 0.05, y: 0.1, z: 0.05}
+  m_Children: []
+  m_Father: {fileID: 717469823}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1020140639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020140637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MSceneObject:
+    __isset:
+      Collider: 0
+      Mesh: 0
+      PhysicsProperties: 0
+      Properties: 1
+      Attachments: 0
+      Constraints: 0
+  TaskEditorLocalID: 1
+  TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: Ratchet.json
+  ShowCoordinateSystem: 0
+  Velocity: {x: 0, y: 0, z: 0}
+  UpdatePhysicsCurrentFrame: 1
+  OverrideColor: 0
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  IgnoreCollision: 0
+  TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
+  Type: 6
+  Tool: Ratchet
+  InitialLocation: {fileID: 793329999}
+  InitialLocationConstraint: 
+  FinalLocation: {fileID: 2104910326}
+  FinalLocationConstraint: 
+  IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
+  Constraints:
+  - __isset:
+      GeometryConstraint: 1
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 0
+      JointConstraint: 0
+      Properties: 1
+  - __isset:
+      GeometryConstraint: 0
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 1
+      JointConstraint: 0
+      Properties: 1
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
+--- !u!65 &1020140640
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020140637}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &1020140641
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020140637}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2c1048363fd2f5d43aa53c83d2b36ca7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1020140642
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020140637}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1027962244
 GameObject:
   m_ObjectHideFlags: 0
@@ -8444,7 +8904,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 13
+  TaskEditorLocalID: 4
   TaskEditorID: 759
   selectedConstraint: -1
   ConstraintsFile: Grasp Object31.json
@@ -8455,6 +8915,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 2
   Tool: Wrench
   InitialLocation: {fileID: 0}
@@ -8542,7 +9004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044186694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.79, y: 0.93, z: -0.814}
+  m_LocalPosition: {x: -2.79, y: 0.909, z: -0.833}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 0.19999999}
   m_Children:
   - {fileID: 1552854602}
@@ -8695,6 +9157,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
@@ -9252,6 +9716,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
@@ -9833,7 +10299,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 11
+  TaskEditorLocalID: 14
   TaskEditorID: 29
   selectedConstraint: -1
   ConstraintsFile: 
@@ -9844,6 +10310,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 8
   Tool: 
   InitialLocation: {fileID: 0}
@@ -9939,165 +10407,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201183969}
   m_Mesh: {fileID: 4300000, guid: dacacc1ffcc7bbd408e07417a076d01d, type: 3}
---- !u!1 &1213632326
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1213632331}
-  - component: {fileID: 1213632330}
-  - component: {fileID: 1213632329}
-  - component: {fileID: 1213632328}
-  - component: {fileID: 1213632327}
-  m_Layer: 0
-  m_Name: Wrench
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1213632327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213632326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MSceneObject:
-    __isset:
-      Collider: 0
-      Mesh: 0
-      PhysicsProperties: 0
-      Properties: 1
-      Attachments: 0
-      Constraints: 0
-  TaskEditorLocalID: 16
-  TaskEditorID: 759
-  selectedConstraint: -1
-  ConstraintsFile: Grasp Object31.json
-  ShowCoordinateSystem: 0
-  Velocity: {x: 0, y: 0, z: 0}
-  UpdatePhysicsCurrentFrame: 1
-  OverrideColor: 0
-  Color: {r: 0, g: 0, b: 0, a: 0}
-  IgnoreCollision: 0
-  TransferMesh: 0
-  Type: 6
-  Tool: Wrench
-  InitialLocation: {fileID: 2026284463}
-  InitialLocationConstraint: 
-  FinalLocation: {fileID: 1044186695}
-  FinalLocationConstraint: 
-  IsLocatedAt: {fileID: 0}
-  RDF: 
-  StationRef: 0
-  GroupRef: 0
-  Constraints:
-  - __isset:
-      GeometryConstraint: 1
-      VelocityConstraint: 0
-      AccelerationConstraint: 0
-      PathConstraint: 0
-      JointPathConstraint: 0
-      PostureConstraint: 0
-      JointConstraint: 0
-      Properties: 1
-  - __isset:
-      GeometryConstraint: 0
-      VelocityConstraint: 0
-      AccelerationConstraint: 0
-      PathConstraint: 0
-      JointPathConstraint: 0
-      PostureConstraint: 1
-      JointConstraint: 0
-      Properties: 1
-  MinXYZ: {x: 1, y: 0.2, z: 0.1}
-  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
-  Rotation: {x: 0, y: 0, z: 0}
---- !u!136 &1213632328
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213632326}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!23 &1213632329
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213632326}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 83c57d86b2295bf4cac6c44910d904bc, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1213632330
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213632326}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1213632331
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213632326}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.831, y: 0.93, z: -0.825}
-  m_LocalScale: {x: 0.05, y: 0.1, z: 0.05}
-  m_Children:
-  - {fileID: 918662234}
-  m_Father: {fileID: 717469823}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1216607683
 GameObject:
   m_ObjectHideFlags: 0
@@ -10459,7 +10768,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 7
+  TaskEditorLocalID: 12
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -10470,6 +10779,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 3
   Tool: 
   InitialLocation: {fileID: 0}
@@ -12148,6 +12459,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
@@ -12286,6 +12599,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
@@ -12347,6 +12662,84 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526955893}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1542942175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1542942176}
+  - component: {fileID: 1542942177}
+  m_Layer: 0
+  m_Name: TurningAxis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1542942176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542942175}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1707261672}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1542942177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542942175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MSceneObject:
+    __isset:
+      Collider: 0
+      Mesh: 0
+      PhysicsProperties: 0
+      Properties: 1
+      Attachments: 0
+      Constraints: 0
+  TaskEditorLocalID: 2
+  TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
+  ShowCoordinateSystem: 0
+  Velocity: {x: 0, y: 0, z: 0}
+  UpdatePhysicsCurrentFrame: 1
+  OverrideColor: 0
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  IgnoreCollision: 0
+  TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
+  Type: 0
+  Tool: 
+  InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
+  FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
+  IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
+  Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &1552854597
 GameObject:
   m_ObjectHideFlags: 0
@@ -12386,7 +12779,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 6
+  TaskEditorLocalID: 5
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -12397,6 +12790,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 3
   Tool: 
   InitialLocation: {fileID: 0}
@@ -12466,8 +12861,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552854597}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 2.7849998, y: -4.45, z: -1.4349998}
-  m_LocalScale: {x: 0.09999994, y: 0.10000002, z: 0.09999994}
+  m_LocalPosition: {x: 2.7849998, y: -4.4500003, z: -1.4350002}
+  m_LocalScale: {x: 0.09999992, y: 0.10000002, z: 0.09999992}
   m_Children: []
   m_Father: {fileID: 1044186700}
   m_RootOrder: 0
@@ -12938,6 +13333,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
@@ -13012,131 +13409,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617310235}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1632318402
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1632318403}
-  - component: {fileID: 1632318406}
-  - component: {fileID: 1632318405}
-  - component: {fileID: 1632318404}
-  m_Layer: 0
-  m_Name: CarryTarget
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1632318403
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632318402}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.013, z: 0.351}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_Children: []
-  m_Father: {fileID: 7341640644656884271}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1632318404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632318402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MSceneObject:
-    __isset:
-      Collider: 0
-      Mesh: 0
-      PhysicsProperties: 0
-      Properties: 1
-      Attachments: 0
-      Constraints: 0
-  TaskEditorLocalID: 20
-  TaskEditorID: 0
-  selectedConstraint: -1
-  ConstraintsFile: 
-  ShowCoordinateSystem: 0
-  Velocity: {x: 0, y: 0, z: 0}
-  UpdatePhysicsCurrentFrame: 1
-  OverrideColor: 0
-  Color: {r: 0, g: 0, b: 0, a: 0}
-  IgnoreCollision: 0
-  TransferMesh: 0
-  Type: 0
-  Tool: 
-  InitialLocation: {fileID: 0}
-  InitialLocationConstraint: 
-  FinalLocation: {fileID: 0}
-  FinalLocationConstraint: 
-  IsLocatedAt: {fileID: 0}
-  RDF: 
-  StationRef: 0
-  GroupRef: 0
-  Constraints: []
-  MinXYZ: {x: 1, y: 0.2, z: 0.1}
-  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
-  Rotation: {x: 0, y: 0, z: 0}
---- !u!23 &1632318405
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632318402}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1632318406
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632318402}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1635182282
 GameObject:
   m_ObjectHideFlags: 0
@@ -13183,6 +13455,7 @@ MonoBehaviour:
   AllowRemoteSkeletonConnections: 1
   ShotFolder: Screenshots/
   glTFFolder: gltf_exports/
+  texturesFolder: Assets/MMI/png/
 --- !u!114 &1635182284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13226,23 +13499,27 @@ MonoBehaviour:
   - {fileID: 367669296}
   - {fileID: 791624577}
   Tools:
-  - {fileID: 1213632327}
+  - {fileID: 0}
   InitialLocations:
   - {fileID: 2026284463}
+  - {fileID: 793329999}
   FinalLocations:
   - {fileID: 834936233}
   - {fileID: 667682629}
   - {fileID: 1044186695}
+  - {fileID: 2104910326}
   WalkTargets:
   - {fileID: 547302291}
   - {fileID: 1552854598}
   - {fileID: 1902387922}
   - {fileID: 1299968479}
+  - {fileID: 1992750380}
+  - {fileID: 172074310}
   mainCamera: {fileID: 0}
   photoCamera: {fileID: 0}
   target: {fileID: 0}
   tasEditorProjectName: My project
-  PictureUploadProgress: -1
+  PictureUploadProgress: 101
   gltfexporter: {fileID: 1635182286}
   cameraScript: {fileID: 534669908}
   stationsLoaded: 1
@@ -13253,16 +13530,22 @@ MonoBehaviour:
     localID: 1
     avatar: Avatar
   workersJson:
-  - id: 95
+  - id: 102
     stationid: 17
     avatarid: 0
-    worker: Andre
+    worker: Avatar
     simulate: 1
     syncstatus: 2
   - id: 14
     stationid: 17
     avatarid: 0
     worker: Default worker
+    simulate: 1
+    syncstatus: 2
+  - id: 101
+    stationid: 17
+    avatarid: 0
+    worker: Fritz
     simulate: 1
     syncstatus: 2
   - id: 15
@@ -13344,13 +13627,13 @@ MonoBehaviour:
     localid: 29
   - name: Grasp Object3
     id: 774
-    localid: 8
+    localid: 13
   - name: CutPoint
     id: 775
-    localid: 3
+    localid: 8
   - name: DrillPoint
     id: 776
-    localid: 14
+    localid: 17
 --- !u!114 &1635182286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13868,6 +14151,167 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700751563}
   m_Mesh: {fileID: 4300000, guid: dacacc1ffcc7bbd408e07417a076d01d, type: 3}
+--- !u!1 &1707261671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1707261672}
+  - component: {fileID: 1707261676}
+  - component: {fileID: 1707261675}
+  - component: {fileID: 1707261674}
+  - component: {fileID: 1707261673}
+  m_Layer: 0
+  m_Name: Scissors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1707261672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707261671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.831, y: 0.93, z: -1.795}
+  m_LocalScale: {x: 0.05, y: 0.1, z: 0.05}
+  m_Children:
+  - {fileID: 1542942176}
+  m_Father: {fileID: 717469823}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1707261673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707261671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MSceneObject:
+    __isset:
+      Collider: 0
+      Mesh: 0
+      PhysicsProperties: 0
+      Properties: 1
+      Attachments: 0
+      Constraints: 0
+  TaskEditorLocalID: 1
+  TaskEditorID: 759
+  selectedConstraint: -1
+  ConstraintsFile: Grasp Object31.json
+  ShowCoordinateSystem: 0
+  Velocity: {x: 0, y: 0, z: 0}
+  UpdatePhysicsCurrentFrame: 1
+  OverrideColor: 0
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  IgnoreCollision: 0
+  TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
+  Type: 6
+  Tool: Scissors
+  InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
+  FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
+  IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
+  Constraints:
+  - __isset:
+      GeometryConstraint: 1
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 0
+      JointConstraint: 0
+      Properties: 1
+  - __isset:
+      GeometryConstraint: 0
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 1
+      JointConstraint: 0
+      Properties: 1
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
+--- !u!136 &1707261674
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707261671}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &1707261675
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707261671}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 83c57d86b2295bf4cac6c44910d904bc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1707261676
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707261671}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1710568459
 GameObject:
   m_ObjectHideFlags: 0
@@ -15510,7 +15954,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 4
+  TaskEditorLocalID: 9
   TaskEditorID: 0
   selectedConstraint: -1
   ConstraintsFile: 
@@ -15521,6 +15965,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 3
   Tool: 
   InitialLocation: {fileID: 0}
@@ -16173,6 +16619,133 @@ Transform:
   m_Father: {fileID: 471821637}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1992750379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1992750383}
+  - component: {fileID: 1992750382}
+  - component: {fileID: 1992750381}
+  - component: {fileID: 1992750380}
+  m_Layer: 0
+  m_Name: Ratchet_PI_WalkTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1992750380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992750379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MSceneObject:
+    __isset:
+      Collider: 0
+      Mesh: 0
+      PhysicsProperties: 0
+      Properties: 1
+      Attachments: 0
+      Constraints: 0
+  TaskEditorLocalID: 10
+  TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
+  ShowCoordinateSystem: 0
+  Velocity: {x: 0, y: 0, z: 0}
+  UpdatePhysicsCurrentFrame: 1
+  OverrideColor: 0
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  IgnoreCollision: 0
+  TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
+  Type: 3
+  Tool: 
+  InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
+  FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
+  IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
+  Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
+--- !u!23 &1992750381
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992750379}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1019000906}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1992750382
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992750379}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1992750383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992750379}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 2.7450004, y: -4.4700003, z: -1.1300005}
+  m_LocalScale: {x: 0.099999905, y: 0.10000002, z: 0.099999905}
+  m_Children: []
+  m_Father: {fileID: 793329996}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &2002389975
 GameObject:
   m_ObjectHideFlags: 0
@@ -16239,6 +16812,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
@@ -16567,6 +17142,166 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014191482}
   m_Mesh: {fileID: 4300000, guid: dacacc1ffcc7bbd408e07417a076d01d, type: 3}
+--- !u!1 &2019583095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2019583096}
+  - component: {fileID: 2019583100}
+  - component: {fileID: 2019583099}
+  - component: {fileID: 2019583097}
+  - component: {fileID: 2019583098}
+  m_Layer: 0
+  m_Name: Wrench
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2019583096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019583095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.831, y: 0.93, z: -0.81}
+  m_LocalScale: {x: 0.05, y: 0.1, z: 0.05}
+  m_Children:
+  - {fileID: 968520534}
+  m_Father: {fileID: 717469823}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2019583097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019583095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MSceneObject:
+    __isset:
+      Collider: 0
+      Mesh: 0
+      PhysicsProperties: 0
+      Properties: 1
+      Attachments: 0
+      Constraints: 0
+  TaskEditorLocalID: 6
+  TaskEditorID: 759
+  selectedConstraint: -1
+  ConstraintsFile: Grasp Object31.json
+  ShowCoordinateSystem: 0
+  Velocity: {x: 0, y: 0, z: 0}
+  UpdatePhysicsCurrentFrame: 1
+  OverrideColor: 0
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  IgnoreCollision: 0
+  TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
+  Type: 6
+  Tool: Wrench
+  InitialLocation: {fileID: 2026284463}
+  InitialLocationConstraint: 
+  FinalLocation: {fileID: 1044186695}
+  FinalLocationConstraint: 
+  IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
+  Constraints:
+  - __isset:
+      GeometryConstraint: 1
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 0
+      JointConstraint: 0
+      Properties: 1
+  - __isset:
+      GeometryConstraint: 0
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 1
+      JointConstraint: 0
+      Properties: 1
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
+--- !u!65 &2019583098
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019583095}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &2019583099
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019583095}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bb5ff21056d00d84ca6d03de97570a9b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &2019583100
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019583095}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2024230010
 GameObject:
   m_ObjectHideFlags: 0
@@ -16685,7 +17420,7 @@ MonoBehaviour:
       Properties: 1
       Attachments: 0
       Constraints: 0
-  TaskEditorLocalID: 12
+  TaskEditorLocalID: 2
   TaskEditorID: 759
   selectedConstraint: -1
   ConstraintsFile: Grasp Object31.json
@@ -16696,6 +17431,8 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 1
   Tool: Wrench
   InitialLocation: {fileID: 0}
@@ -16783,7 +17520,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026284462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.783, y: 0.93, z: -0.816}
+  m_LocalPosition: {x: -2.783, y: 0.913, z: -0.789}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 0.19999999}
   m_Children:
   - {fileID: 547302295}
@@ -17541,6 +18278,152 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103265989}
   m_Mesh: {fileID: 4300000, guid: dacacc1ffcc7bbd408e07417a076d01d, type: 3}
+--- !u!1 &2104910322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2104910323}
+  - component: {fileID: 2104910325}
+  - component: {fileID: 2104910324}
+  - component: {fileID: 2104910326}
+  m_Layer: 0
+  m_Name: Ratchet_PositionFinal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2104910323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104910322}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.79, y: 0.909, z: -1.64}
+  m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 0.19999999}
+  m_Children:
+  - {fileID: 172074313}
+  m_Father: {fileID: 717469823}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2104910324
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104910322}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 960003404}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &2104910325
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104910322}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2104910326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104910322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MSceneObject:
+    __isset:
+      Collider: 0
+      Mesh: 0
+      PhysicsProperties: 0
+      Properties: 1
+      Attachments: 0
+      Constraints: 0
+  TaskEditorLocalID: 16
+  TaskEditorID: 759
+  selectedConstraint: -1
+  ConstraintsFile: Grasp Object31.json
+  ShowCoordinateSystem: 0
+  Velocity: {x: 0, y: 0, z: 0}
+  UpdatePhysicsCurrentFrame: 1
+  OverrideColor: 0
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  IgnoreCollision: 0
+  TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
+  Type: 2
+  Tool: Wrench
+  InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
+  FinalLocation: {fileID: 834936233}
+  FinalLocationConstraint: 
+  IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
+  Constraints:
+  - __isset:
+      GeometryConstraint: 1
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 0
+      JointConstraint: 0
+      Properties: 1
+  - __isset:
+      GeometryConstraint: 0
+      VelocityConstraint: 0
+      AccelerationConstraint: 0
+      PathConstraint: 0
+      JointPathConstraint: 0
+      PostureConstraint: 1
+      JointConstraint: 0
+      Properties: 1
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &2134306173
 GameObject:
   m_ObjectHideFlags: 0
@@ -17823,6 +18706,8 @@ MonoBehaviour:
   - Example Agent
   - ExamplePosition Agent
   - MOSIM Agent
+  - Blocks_A1 Agent
+  - Blocks_A2 Agent
   caIndex: 0
   caList:
   - execute
@@ -17855,6 +18740,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mmiSettings: {fileID: 1635182283}
   Repository: http://localhost:8090/rdf4j/repositories/dummy_knowledge
+--- !u!114 &7341640644656884280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7341640644656884273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MSceneObject:
+    __isset:
+      Collider: 0
+      Mesh: 0
+      PhysicsProperties: 0
+      Properties: 1
+      Attachments: 0
+      Constraints: 0
+  TaskEditorLocalID: 0
+  TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
+  ShowCoordinateSystem: 0
+  Velocity: {x: 0, y: 0, z: 0}
+  UpdatePhysicsCurrentFrame: 1
+  OverrideColor: 0
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  IgnoreCollision: 0
+  TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
+  Type: 0
+  Tool: 
+  InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
+  FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
+  IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
+  Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &7341640644656884283
 MonoBehaviour:
   m_ObjectHideFlags: 0
