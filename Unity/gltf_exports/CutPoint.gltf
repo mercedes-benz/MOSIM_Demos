@@ -17,6 +17,9 @@
     {
       "name": "CutPoint",
       "mesh": 0,
+      "children": [
+        1
+      ],
       "rotation": [
         0.0,
         0.0,
@@ -34,9 +37,37 @@
         -0.42
       ],
       "extras": {
-        "TaskEditorLocalID": 3,
+        "TaskEditorLocalID": 9,
         "TaskEditorID": 775,
         "Type": "Part",
+        "Tool": "",
+        "StationRef": 0,
+        "GroupRef": 0
+      }
+    },
+    {
+      "name": "CutPoint_WalkTarget",
+      "mesh": 1,
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        0.09999999,
+        0.400000036,
+        0.399999976
+      ],
+      "translation": [
+        0.0,
+        -13.0700006,
+        -7.97999525
+      ],
+      "extras": {
+        "TaskEditorLocalID": 10,
+        "TaskEditorID": 0,
+        "Type": "WalkTarget",
         "Tool": "",
         "StationRef": 0,
         "GroupRef": 0
@@ -139,6 +170,19 @@
           "material": 1
         }
       ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "mode": 4,
+          "material": 2
+        }
+      ]
     }
   ],
   "materials": [
@@ -167,6 +211,19 @@
         "roughnessFactor": 0.5
       },
       "name": "ActionPoint"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.0,
+          0.96229744,
+          0.490196079
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Default-Material (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance)"
     }
   ]
 }

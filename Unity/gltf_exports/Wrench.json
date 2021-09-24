@@ -1,6 +1,288 @@
 [
   {
     "__isset": {
+      "GeometryConstraint": false,
+      "VelocityConstraint": false,
+      "AccelerationConstraint": false,
+      "PathConstraint": false,
+      "JointPathConstraint": false,
+      "PostureConstraint": true,
+      "JointConstraint": false,
+      "Properties": true
+    },
+    "ID": "GraspingPointR",
+    "GeometryConstraint": null,
+    "VelocityConstraint": null,
+    "AccelerationConstraint": null,
+    "PathConstraint": null,
+    "JointPathConstraint": null,
+    "PostureConstraint": {
+      "__isset": {
+        "JointConstraints": true
+      },
+      "Posture": {
+        "__isset": {
+          "PartialJointList": false
+        },
+        "AvatarID": "",
+        "PostureData": [],
+        "PartialJointList": null
+      },
+      "JointConstraints": [
+        {
+          "__isset": {
+            "GeometryConstraint": true,
+            "VelocityConstraint": false,
+            "AccelerationConstraint": false
+          },
+          "JointType": 24,
+          "GeometryConstraint": {
+            "__isset": {
+              "ParentToConstraint": true,
+              "TranslationConstraint": false,
+              "RotationConstraint": false,
+              "WeightingFactor": false
+            },
+            "ParentObjectID": "7",
+            "ParentToConstraint": {
+              "__isset": {
+                "Parent": true
+              },
+              "ID": "RightWrist",
+              "Position": {
+                "X": 2.0488743782043457,
+                "Y": 0.0,
+                "Z": 0.46495437622070313
+              },
+              "Rotation": {
+                "X": -0.469515323638916,
+                "Y": 0.52948504686355591,
+                "Z": 0.521449625492096,
+                "W": 0.47675076127052307
+              },
+              "Parent": "7"
+            },
+            "TranslationConstraint": null,
+            "RotationConstraint": null,
+            "WeightingFactor": 0.0
+          },
+          "VelocityConstraint": null,
+          "AccelerationConstraint": null
+        },
+        {
+          "__isset": {
+            "GeometryConstraint": true,
+            "VelocityConstraint": false,
+            "AccelerationConstraint": false
+          },
+          "JointType": 52,
+          "GeometryConstraint": {
+            "__isset": {
+              "ParentToConstraint": true,
+              "TranslationConstraint": false,
+              "RotationConstraint": false,
+              "WeightingFactor": false
+            },
+            "ParentObjectID": "7",
+            "ParentToConstraint": {
+              "__isset": {
+                "Parent": true
+              },
+              "ID": "RightIndexTip",
+              "Position": {
+                "X": -0.1014111340045929,
+                "Y": 0.29652595520019531,
+                "Z": -0.58717727661132813
+              },
+              "Rotation": {
+                "X": -0.63566827774047852,
+                "Y": -0.31100624799728394,
+                "Z": -0.3201252818107605,
+                "W": 0.62985771894454956
+              },
+              "Parent": "7"
+            },
+            "TranslationConstraint": null,
+            "RotationConstraint": null,
+            "WeightingFactor": 0.0
+          },
+          "VelocityConstraint": null,
+          "AccelerationConstraint": null
+        },
+        {
+          "__isset": {
+            "GeometryConstraint": true,
+            "VelocityConstraint": false,
+            "AccelerationConstraint": false
+          },
+          "JointType": 64,
+          "GeometryConstraint": {
+            "__isset": {
+              "ParentToConstraint": true,
+              "TranslationConstraint": false,
+              "RotationConstraint": false,
+              "WeightingFactor": false
+            },
+            "ParentObjectID": "7",
+            "ParentToConstraint": {
+              "__isset": {
+                "Parent": true
+              },
+              "ID": "RightLittleTip",
+              "Position": {
+                "X": -0.6598936915397644,
+                "Y": -0.3928375244140625,
+                "Z": -0.26525497436523438
+              },
+              "Rotation": {
+                "X": -0.70585137605667114,
+                "Y": 0.050723999738693237,
+                "Z": 0.039919942617416382,
+                "W": 0.70541298389434814
+              },
+              "Parent": "7"
+            },
+            "TranslationConstraint": null,
+            "RotationConstraint": null,
+            "WeightingFactor": 0.0
+          },
+          "VelocityConstraint": null,
+          "AccelerationConstraint": null
+        },
+        {
+          "__isset": {
+            "GeometryConstraint": true,
+            "VelocityConstraint": false,
+            "AccelerationConstraint": false
+          },
+          "JointType": 56,
+          "GeometryConstraint": {
+            "__isset": {
+              "ParentToConstraint": true,
+              "TranslationConstraint": false,
+              "RotationConstraint": false,
+              "WeightingFactor": false
+            },
+            "ParentObjectID": "7",
+            "ParentToConstraint": {
+              "__isset": {
+                "Parent": true
+              },
+              "ID": "RightMiddleTip",
+              "Position": {
+                "X": 0.18900281190872192,
+                "Y": 0.013275146484375,
+                "Z": -0.61641693115234375
+              },
+              "Rotation": {
+                "X": -0.56903588771820068,
+                "Y": -0.42071050405502319,
+                "Z": -0.42863002419471741,
+                "W": 0.56167376041412354
+              },
+              "Parent": "7"
+            },
+            "TranslationConstraint": null,
+            "RotationConstraint": null,
+            "WeightingFactor": 0.0
+          },
+          "VelocityConstraint": null,
+          "AccelerationConstraint": null
+        },
+        {
+          "__isset": {
+            "GeometryConstraint": true,
+            "VelocityConstraint": false,
+            "AccelerationConstraint": false
+          },
+          "JointType": 60,
+          "GeometryConstraint": {
+            "__isset": {
+              "ParentToConstraint": true,
+              "TranslationConstraint": false,
+              "RotationConstraint": false,
+              "WeightingFactor": false
+            },
+            "ParentObjectID": "7",
+            "ParentToConstraint": {
+              "__isset": {
+                "Parent": true
+              },
+              "ID": "RightRingTip",
+              "Position": {
+                "X": 0.1315731406211853,
+                "Y": -0.21190643310546875,
+                "Z": -0.58126449584960938
+              },
+              "Rotation": {
+                "X": -0.60435730218887329,
+                "Y": -0.36817294359207153,
+                "Z": -0.37671869993209839,
+                "W": 0.597732424736023
+              },
+              "Parent": "7"
+            },
+            "TranslationConstraint": null,
+            "RotationConstraint": null,
+            "WeightingFactor": 0.0
+          },
+          "VelocityConstraint": null,
+          "AccelerationConstraint": null
+        },
+        {
+          "__isset": {
+            "GeometryConstraint": true,
+            "VelocityConstraint": false,
+            "AccelerationConstraint": false
+          },
+          "JointType": 48,
+          "GeometryConstraint": {
+            "__isset": {
+              "ParentToConstraint": true,
+              "TranslationConstraint": false,
+              "RotationConstraint": false,
+              "WeightingFactor": false
+            },
+            "ParentObjectID": "7",
+            "ParentToConstraint": {
+              "__isset": {
+                "Parent": true
+              },
+              "ID": "RightThumbTip",
+              "Position": {
+                "X": -0.47084444761276245,
+                "Y": 0.18980026245117188,
+                "Z": -0.37181854248046875
+              },
+              "Rotation": {
+                "X": -0.9198528528213501,
+                "Y": 0.39124861359596252,
+                "Z": 0.027924299240112305,
+                "W": 0.0039778947830200195
+              },
+              "Parent": "7"
+            },
+            "TranslationConstraint": null,
+            "RotationConstraint": null,
+            "WeightingFactor": 0.0
+          },
+          "VelocityConstraint": null,
+          "AccelerationConstraint": null
+        }
+      ]
+    },
+    "JointConstraint": null,
+    "Properties": {
+      "Hand-Side": "Right",
+      "Index-Posture-Value": "0,8142857",
+      "Pinky-Posture-Value": "0,5",
+      "Middle-Posture-Value": "0,9",
+      "Ring-Posture-Value": "0,9",
+      "Thumb-Posture-Value": "7"
+    }
+  },
+  {
+    "__isset": {
       "GeometryConstraint": true,
       "VelocityConstraint": false,
       "AccelerationConstraint": false,
@@ -18,24 +300,24 @@
         "RotationConstraint": false,
         "WeightingFactor": true
       },
-      "ParentObjectID": "5",
+      "ParentObjectID": "7",
       "ParentToConstraint": {
         "__isset": {
           "Parent": true
         },
-        "ID": "4f7d63e1-664a-4020-b76e-a4d00170ab8a",
+        "ID": "b0d70ff8-fa4f-4e65-811d-635bb7eeee89",
         "Position": {
-          "X": 0.081622771918773651,
-          "Y": -0.00048542022705078125,
-          "Z": 0.013462066650390625
+          "X": 0.10056014358997345,
+          "Y": 0.0,
+          "Z": 0.023126602172851563
         },
         "Rotation": {
-          "X": -0.49906051158905029,
-          "Y": 0.50218874216079712,
-          "Z": 0.515002429485321,
-          "W": 0.483236700296402
+          "X": -0.481375515460968,
+          "Y": 0.517090380191803,
+          "Z": 0.55224758386611938,
+          "W": 0.44262605905532837
         },
-        "Parent": "5"
+        "Parent": "7"
       },
       "TranslationConstraint": {
         "Type": 0,
@@ -79,283 +361,5 @@
     "PostureConstraint": null,
     "JointConstraint": null,
     "Properties": {}
-  },
-  {
-    "__isset": {
-      "GeometryConstraint": false,
-      "VelocityConstraint": false,
-      "AccelerationConstraint": false,
-      "PathConstraint": false,
-      "JointPathConstraint": false,
-      "PostureConstraint": true,
-      "JointConstraint": false,
-      "Properties": true
-    },
-    "ID": "GraspingPointR",
-    "GeometryConstraint": null,
-    "VelocityConstraint": null,
-    "AccelerationConstraint": null,
-    "PathConstraint": null,
-    "JointPathConstraint": null,
-    "PostureConstraint": {
-      "__isset": {
-        "JointConstraints": true
-      },
-      "Posture": {
-        "__isset": {
-          "PartialJointList": false
-        },
-        "AvatarID": "",
-        "PostureData": [],
-        "PartialJointList": null
-      },
-      "JointConstraints": [
-        {
-          "__isset": {
-            "GeometryConstraint": true,
-            "VelocityConstraint": false,
-            "AccelerationConstraint": false
-          },
-          "JointType": 24,
-          "GeometryConstraint": {
-            "__isset": {
-              "ParentToConstraint": true,
-              "TranslationConstraint": false,
-              "RotationConstraint": false,
-              "WeightingFactor": false
-            },
-            "ParentObjectID": "5",
-            "ParentToConstraint": {
-              "__isset": {
-                "Parent": true
-              },
-              "ID": "RightWrist",
-              "Position": {
-                "X": 1.7494441270828247,
-                "Y": -0.018062591552734375,
-                "Z": 0.24156570434570313
-              },
-              "Rotation": {
-                "X": -0.48416051268577576,
-                "Y": 0.51113641262054443,
-                "Z": 0.54825389385223389,
-                "W": 0.45138218998908997
-              },
-              "Parent": "5"
-            },
-            "TranslationConstraint": null,
-            "RotationConstraint": null,
-            "WeightingFactor": 0.0
-          },
-          "VelocityConstraint": null,
-          "AccelerationConstraint": null
-        },
-        {
-          "__isset": {
-            "GeometryConstraint": true,
-            "VelocityConstraint": false,
-            "AccelerationConstraint": false
-          },
-          "JointType": 52,
-          "GeometryConstraint": {
-            "__isset": {
-              "ParentToConstraint": true,
-              "TranslationConstraint": false,
-              "RotationConstraint": false,
-              "WeightingFactor": false
-            },
-            "ParentObjectID": "5",
-            "ParentToConstraint": {
-              "__isset": {
-                "Parent": true
-              },
-              "ID": "RightIndexTip",
-              "Position": {
-                "X": -0.033337265253067017,
-                "Y": 0.20429611206054688,
-                "Z": -0.38951873779296875
-              },
-              "Rotation": {
-                "X": -0.49830043315887451,
-                "Y": -0.49736154079437256,
-                "Z": -0.46556508541107178,
-                "W": 0.5362623929977417
-              },
-              "Parent": "5"
-            },
-            "TranslationConstraint": null,
-            "RotationConstraint": null,
-            "WeightingFactor": 0.0
-          },
-          "VelocityConstraint": null,
-          "AccelerationConstraint": null
-        },
-        {
-          "__isset": {
-            "GeometryConstraint": true,
-            "VelocityConstraint": false,
-            "AccelerationConstraint": false
-          },
-          "JointType": 64,
-          "GeometryConstraint": {
-            "__isset": {
-              "ParentToConstraint": true,
-              "TranslationConstraint": false,
-              "RotationConstraint": false,
-              "WeightingFactor": false
-            },
-            "ParentObjectID": "5",
-            "ParentToConstraint": {
-              "__isset": {
-                "Parent": true
-              },
-              "ID": "RightLittleTip",
-              "Position": {
-                "X": 0.14147332310676575,
-                "Y": -0.48571586608886719,
-                "Z": -0.25205612182617188
-              },
-              "Rotation": {
-                "X": -0.52240127325057983,
-                "Y": -0.47198385000228882,
-                "Z": -0.43834015727043152,
-                "W": 0.55873620510101318
-              },
-              "Parent": "5"
-            },
-            "TranslationConstraint": null,
-            "RotationConstraint": null,
-            "WeightingFactor": 0.0
-          },
-          "VelocityConstraint": null,
-          "AccelerationConstraint": null
-        },
-        {
-          "__isset": {
-            "GeometryConstraint": true,
-            "VelocityConstraint": false,
-            "AccelerationConstraint": false
-          },
-          "JointType": 56,
-          "GeometryConstraint": {
-            "__isset": {
-              "ParentToConstraint": true,
-              "TranslationConstraint": false,
-              "RotationConstraint": false,
-              "WeightingFactor": false
-            },
-            "ParentObjectID": "5",
-            "ParentToConstraint": {
-              "__isset": {
-                "Parent": true
-              },
-              "ID": "RightMiddleTip",
-              "Position": {
-                "X": 0.098375886678695679,
-                "Y": -0.0720977783203125,
-                "Z": -0.55187225341796875
-              },
-              "Rotation": {
-                "X": -0.47296828031539917,
-                "Y": -0.521510124206543,
-                "Z": -0.49163949489593506,
-                "W": 0.51246345043182373
-              },
-              "Parent": "5"
-            },
-            "TranslationConstraint": null,
-            "RotationConstraint": null,
-            "WeightingFactor": 0.0
-          },
-          "VelocityConstraint": null,
-          "AccelerationConstraint": null
-        },
-        {
-          "__isset": {
-            "GeometryConstraint": true,
-            "VelocityConstraint": false,
-            "AccelerationConstraint": false
-          },
-          "JointType": 60,
-          "GeometryConstraint": {
-            "__isset": {
-              "ParentToConstraint": true,
-              "TranslationConstraint": false,
-              "RotationConstraint": false,
-              "WeightingFactor": false
-            },
-            "ParentObjectID": "5",
-            "ParentToConstraint": {
-              "__isset": {
-                "Parent": true
-              },
-              "ID": "RightRingTip",
-              "Position": {
-                "X": 0.079520553350448608,
-                "Y": -0.29883384704589844,
-                "Z": -0.57424545288085938
-              },
-              "Rotation": {
-                "X": -0.52240127325057983,
-                "Y": -0.47198385000228882,
-                "Z": -0.43834015727043152,
-                "W": 0.55873620510101318
-              },
-              "Parent": "5"
-            },
-            "TranslationConstraint": null,
-            "RotationConstraint": null,
-            "WeightingFactor": 0.0
-          },
-          "VelocityConstraint": null,
-          "AccelerationConstraint": null
-        },
-        {
-          "__isset": {
-            "GeometryConstraint": true,
-            "VelocityConstraint": false,
-            "AccelerationConstraint": false
-          },
-          "JointType": 48,
-          "GeometryConstraint": {
-            "__isset": {
-              "ParentToConstraint": true,
-              "TranslationConstraint": false,
-              "RotationConstraint": false,
-              "WeightingFactor": false
-            },
-            "ParentObjectID": "5",
-            "ParentToConstraint": {
-              "__isset": {
-                "Parent": true
-              },
-              "ID": "RightThumbTip",
-              "Position": {
-                "X": -0.8093143105506897,
-                "Y": 0.0679779052734375,
-                "Z": -0.54355621337890625
-              },
-              "Rotation": {
-                "X": -0.9352644681930542,
-                "Y": 0.35179638862609863,
-                "Z": 0.03883129358291626,
-                "W": 0.003499150276184082
-              },
-              "Parent": "5"
-            },
-            "TranslationConstraint": null,
-            "RotationConstraint": null,
-            "WeightingFactor": 0.0
-          },
-          "VelocityConstraint": null,
-          "AccelerationConstraint": null
-        }
-      ]
-    },
-    "JointConstraint": null,
-    "Properties": {
-      "Hand-Side": "Right",
-      "BasicPosture-Value": "5"
-    }
   }
 ]
