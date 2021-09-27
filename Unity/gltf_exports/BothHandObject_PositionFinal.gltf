@@ -1,0 +1,229 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "MOSIM Unity glTF generator",
+    "copyright": "MIT license"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "My scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "BothHandObject_PositionFinal",
+      "mesh": 0,
+      "children": [
+        1
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        0.7,
+        0.1,
+        0.1
+      ],
+      "translation": [
+        3.24,
+        0.876,
+        -0.41
+      ],
+      "extras": {
+        "TaskEditorLocalID": 23,
+        "TaskEditorID": 0,
+        "Type": "FinalLocation",
+        "Tool": "",
+        "StationRef": 0,
+        "GroupRef": 0
+      }
+    },
+    {
+      "name": "BothHandObject_PF_WalkTarget",
+      "mesh": 1,
+      "rotation": [
+        0.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.0499999933,
+        0.199999988,
+        0.200000018
+      ],
+      "translation": [
+        0.169999927,
+        -8.57,
+        5.62
+      ],
+      "extras": {
+        "TaskEditorLocalID": 12,
+        "TaskEditorID": 0,
+        "Type": "WalkTarget",
+        "Tool": "",
+        "StationRef": 0,
+        "GroupRef": 0
+      }
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 0,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 2,
+      "byteOffset": 0,
+      "byteLength": 144,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 288,
+      "uri": "data:application/octet-stream;base64,AAAAvwAAAL8AAAA/AAAAPwAAAL8AAAA/AAAAvwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAvwAAAD8AAAC/AAAAPwAAAD8AAAC/AAAAvwAAAL8AAAC/AAAAPwAAAL8AAAC/AAAAvwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAvwAAAD8AAAC/AAAAPwAAAD8AAAC/AAAAvwAAAL8AAAC/AAAAvwAAAL8AAAA/AAAAPwAAAL8AAAA/AAAAPwAAAL8AAAC/AAAAPwAAAL8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAC/AAAAPwAAAL8AAAC/AAAAvwAAAL8AAAC/AAAAvwAAAD8AAAC/AAAAvwAAAD8AAAA/AAAAvwAAAL8AAAA/"
+    },
+    {
+      "byteLength": 288,
+      "uri": "data:application/octet-stream;base64,AAAAgAAAAAAAAIA/AAAAgAAAAAAAAIA/AAAAgAAAAAAAAIA/AAAAgAAAAAAAAIA/AAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAAAAAAIC/AAAAgAAAAAAAAIC/AAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAAAAAAIC/AAAAgAAAAAAAAIC/AAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAA"
+    },
+    {
+      "byteLength": 144,
+      "uri": "data:application/octet-stream;base64,AwAAAAIAAAAAAAAAAQAAAAMAAAAAAAAABQAAAAQAAAAIAAAACQAAAAUAAAAIAAAABwAAAAYAAAAKAAAACwAAAAcAAAAKAAAADgAAAA0AAAAMAAAADwAAAA4AAAAMAAAAEgAAABEAAAAQAAAAEwAAABIAAAAQAAAAFgAAABUAAAAUAAAAFwAAABYAAAAUAAAA"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "max": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5125,
+      "count": 36,
+      "min": [
+        0
+      ],
+      "max": [
+        23
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "mode": 4,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "mode": 4,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.0
+      },
+      "name": "Default"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0310485363,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Default-Material (Instance) (Instance)"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.0,
+          0.96229744,
+          0.490196079
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Default-Material (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance)"
+    }
+  ]
+}

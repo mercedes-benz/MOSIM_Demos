@@ -14194,8 +14194,8 @@ MonoBehaviour:
   m_Script: {fileID: 299999410, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToExport: {fileID: 367669296}
-  ExportFileName: CutPoint
+  ObjectToExport: {fileID: 58793160}
+  ExportFileName: BothHandObject_PositionFinal
   gltf:
     asset:
       version: 2.0
@@ -14206,26 +14206,49 @@ MonoBehaviour:
     - name: My scene
       nodes: 00000000
     nodes:
-    - name: CutPoint
+    - name: BothHandObject_PositionFinal
       mesh: 0
+      children: 01000000
+      rotation:
+      - 0
+      - -0
+      - -0
+      - 1
+      scale:
+      - 0.7
+      - 0.1
+      - 0.1
+      translation:
+      - 3.24
+      - 0.876
+      - -0.41
+      extras:
+        TaskEditorLocalID: 23
+        TaskEditorID: 0
+        Type: FinalLocation
+        Tool: 
+        StationRef: 0
+        GroupRef: 0
+    - name: BothHandObject_PF_WalkTarget
+      mesh: 1
       children: 
       rotation:
       - -0
+      - -1
       - 0
       - 0
-      - 1
       scale:
-      - 0.35
-      - 0.1
-      - 0.09
+      - 0.049999993
+      - 0.19999999
+      - 0.20000002
       translation:
-      - 0.8944
-      - 1.33
-      - 0.80700004
+      - 0.16999993
+      - -8.57
+      - 5.62
       extras:
-        TaskEditorLocalID: 9
-        TaskEditorID: 775
-        Type: Part
+        TaskEditorLocalID: 12
+        TaskEditorID: 0
+        Type: WalkTarget
         Tool: 
         StationRef: 0
         GroupRef: 0
@@ -19384,7 +19407,8 @@ MonoBehaviour:
   - Blocks_A1 Agent
   - Blocks_A2 Agent
   caIndex: 0
-  caList: []
+  caList:
+  - execute
   TaskList: 1
   WorkerId: -1
 --- !u!114 &7341640644656884278
