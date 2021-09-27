@@ -27,6 +27,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
+[ExecuteInEditMode]
 [RequireComponent(typeof(MMISceneObject))]
 public class MMISceneObject_RDF : MonoBehaviour
 {
@@ -61,7 +62,7 @@ public class MMISceneObject_RDF : MonoBehaviour
     private string GetRDF()
     {
         StringBuilder RDF = new StringBuilder();
-        if (path.Length > 0)
+        if (path != null && path.Length > 0)
         {
             StreamReader reader = new StreamReader(path);
             breakdown = reader.ReadToEnd();
@@ -81,6 +82,10 @@ public class MMISceneObject_RDF : MonoBehaviour
 
     public void AddProperty()
     {
+        if (RDFProperties == null)
+        {
+            RDFProperties = new StringBuilder();
+        }
         if (RDFProperties.Length == 0 && sProperties.Equals(""))
         {
             RDFProperties.Append("@prefix mosim: <http://www.dfki.de/mosim-ns#>. \n");

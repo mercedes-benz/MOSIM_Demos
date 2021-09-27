@@ -737,6 +737,7 @@ GameObject:
   - component: {fileID: 58793158}
   - component: {fileID: 58793157}
   - component: {fileID: 58793160}
+  - component: {fileID: 58793161}
   m_Layer: 0
   m_Name: BothHandObject_PositionFinal
   m_TagString: Untagged
@@ -875,6 +876,24 @@ MonoBehaviour:
   MinXYZ: {x: 1, y: 0.2, z: 0.1}
   MaxXYZ: {x: 1, y: 0.5, z: 0.1}
   Rotation: {x: 0, y: 0, z: 0}
+--- !u!114 &58793161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58793155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb04116ae6196fa46836560eabce1fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: 
+  breakdown: 
+  property: 
+  value: 
+  sProperties: "@prefix mosim: <http://www.dfki.de/mosim-ns#>. \nmosim:This mosim:moveWith
+    '\"Right\"' . \n"
 --- !u!1 &60455494
 GameObject:
   m_ObjectHideFlags: 0
@@ -14064,7 +14083,7 @@ MonoBehaviour:
   photoCamera: {fileID: 0}
   target: {fileID: 0}
   tasEditorProjectName: My project
-  PictureUploadProgress: -1
+  PictureUploadProgress: 101
   gltfexporter: {fileID: 1635182286}
   cameraScript: {fileID: 534669908}
   stationsLoaded: 1
