@@ -40,6 +40,27 @@ protected override void GUIBehaviorInput()
             this.CoSimulator.Abort();
             this.CoSimulator.AssignInstruction(instruction, simstate);
         }
+        if (GUI.Button(new Rect(10, 50, 120, 50), "LookAt"))
+        {
+            MSkeletonAccess.Iface skeletonAccess = this.avatar.GetSkeletonAccess();
+            skeletonAccess.SetChannelData(this.avatar.GetPosture());
+
+
+
+            MInstruction instruction = new MInstruction(MInstructionFactory.GenerateID(), "LookAt", "Pose/LookAt")
+            {
+                Properties = PropertiesCreator.Create("TargetID", UnitySceneAccess.Instance.GetSceneObjectByName("LookTarget").ID)
+            };
+
+            //MInstruction instruction = new MInstruction(MInstructionFactory.GenerateID(), "MMUTest", "Object/Move");
+            MSimulationState simstate = new MSimulationState(this.avatar.GetPosture(), this.avatar.GetPosture());
+
+
+
+           // this.CoSimulator.Abort();
+            this.CoSimulator.AssignInstruction(instruction, simstate);
+        }
+
         if (GUI.Button(new Rect(140, 10, 120, 50), "Walk to"))
         {
             MInstruction walkInstruction = new MInstruction(MInstructionFactory.GenerateID(), "Walk", MOTION_WALK)

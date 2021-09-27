@@ -174,11 +174,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -186,12 +188,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &40716017
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,11 +384,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -384,12 +398,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!23 &121676071
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -977,11 +1001,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -989,12 +1015,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!23 &194464017
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1181,11 +1217,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 1
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -1193,12 +1231,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &294420659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,11 +1296,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -1260,12 +1310,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &307744222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1762,13 +1822,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.0534969, y: -0.7454732, z: 0.060274743, w: 0.6616456}
-  m_LocalPosition: {x: 3.53, y: 2.14, z: 1.24}
+  m_LocalRotation: {x: 0, y: -0.998308, z: 0, w: 0.058147784}
+  m_LocalPosition: {x: 0.047, y: 1.74, z: 0.731}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 9.245001, y: -96.81901, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -173.33301, z: 0}
 --- !u!114 &534669906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2776,16 +2836,17 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7341640644656884271}
+  - {fileID: 1393453127}
   - {fileID: 121676069}
   - {fileID: 1099169539}
   - {fileID: 890030667}
-  - {fileID: 56924812}
   - {fileID: 1630565717}
+  - {fileID: 56924812}
   - {fileID: 194464015}
   - {fileID: 294420660}
   - {fileID: 2055630620}
   - {fileID: 2023609165}
+  - {fileID: 1795522561}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3101,11 +3162,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -3113,12 +3176,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &793156535
 GameObject:
   m_ObjectHideFlags: 0
@@ -3323,11 +3396,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -3335,12 +3410,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!135 &890030669
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3583,11 +3668,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -3595,12 +3682,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &1099169538
 GameObject:
   m_ObjectHideFlags: 0
@@ -3655,11 +3752,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -3667,12 +3766,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &1147767697
 GameObject:
   m_ObjectHideFlags: 0
@@ -3885,11 +3994,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -3897,12 +4008,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &1296241569
 GameObject:
   m_ObjectHideFlags: 0
@@ -4214,6 +4335,144 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331502265}
   m_CullTransparentMesh: 0
+--- !u!1001 &1393453126
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 717469823}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+        type: 3}
+      propertyPath: m_Name
+      value: tpose_withEyes
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 81816aa98e9ae58498aec33f9b9a43ec, type: 3}
+--- !u!4 &1393453127 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 1393453126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1393453128 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1910273332024336837, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 1393453126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1393453129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 81816aa98e9ae58498aec33f9b9a43ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 1393453126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1393453130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393453129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33894559181a4ee41a3c10b2e14afa31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1393453131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393453129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1240988613, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Joints: []
+  RootTransform: {fileID: 1393453127}
+  Pelvis: {fileID: 1393453128}
+  UseVirtualRoot: 1
+  UseSkeletonVisualization: 1
+  gameJointPrefab: {fileID: 100000, guid: dacacc1ffcc7bbd408e07417a076d01d, type: 3}
+  animatorReference: {fileID: 0}
+  ConfigurationFilePath: configurations/avatar.mos
+  TaskEditorLocalID: 1
+  TaskEditorID: 0
+  UseRemoteCoSimulation: 0
+  RemoteCoSimulationName: 
+  AddBoneSceneObjects: 0
+  Timeout: 30
+  AllowRemoteCoSimulationAccess: 1
+  RemoteCoSimulationAccessPort: 9011
+  RemoteCoSimulationAccessAddress: 127.0.0.1
+  Behavior: {fileID: 0}
+  LastPosture:
+    __isset:
+      PartialJointList: 0
+  MAvatar:
+    __isset:
+      SceneObjects: 0
+      Properties: 0
+  MMUMotionTypesToLoad: []
+  LoadRetargetingConfiguration: 1
 --- !u!1 &1409789963
 GameObject:
   m_ObjectHideFlags: 0
@@ -4582,11 +4841,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -4594,12 +4855,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!65 &1505865210
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4741,11 +5012,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -4753,12 +5026,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!65 &1617310238
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4850,7 +5133,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 717469823}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1630565718
 MonoBehaviour:
@@ -4869,11 +5152,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -4881,12 +5166,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!23 &1630565719
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4934,121 +5229,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1630565716}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1632318402
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1632318403}
-  - component: {fileID: 1632318406}
-  - component: {fileID: 1632318405}
-  - component: {fileID: 1632318404}
-  m_Layer: 0
-  m_Name: CarryTarget
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1632318403
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632318402}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.013, z: 0.351}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_Children: []
-  m_Father: {fileID: 7341640644656884271}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1632318404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632318402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MSceneObject:
-    __isset:
-      Collider: 0
-      Mesh: 0
-      PhysicsProperties: 0
-      Properties: 0
-      Attachments: 0
-      Constraints: 0
-  TaskEditorLocalID: 0
-  TaskEditorID: 0
-  ShowCoordinateSystem: 0
-  Velocity: {x: 0, y: 0, z: 0}
-  UpdatePhysicsCurrentFrame: 1
-  OverrideColor: 0
-  Color: {r: 0, g: 0, b: 0, a: 0}
-  IgnoreCollision: 0
-  TransferMesh: 0
-  Type: 0
-  Tool: 
-  InitialLocation: {fileID: 0}
-  FinalLocation: {fileID: 0}
-  IsLocatedAt: {fileID: 0}
-  Constraints: []
---- !u!23 &1632318405
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632318402}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1632318406
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632318402}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1635182282
 GameObject:
   m_ObjectHideFlags: 0
@@ -5091,6 +5271,9 @@ MonoBehaviour:
   RemoteSkeletonAccessPort: 9099
   RemoteSkeletonAccessAddress: 127.0.0.1
   AllowRemoteSkeletonConnections: 1
+  ShotFolder: Screenshots/
+  glTFFolder: gltf_exports/
+  texturesFolder: Assets/MMI/png/
 --- !u!114 &1635182284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5103,12 +5286,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d667b00aaf3ddd0428c982748cafd407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1649885968 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 948265044574663426, guid: 9696c76540f925f488848d37521b7f5e,
-    type: 3}
-  m_PrefabInstance: {fileID: 948265043918944285}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1687495368
 GameObject:
   m_ObjectHideFlags: 0
@@ -5338,6 +5515,147 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729695825}
   m_CullTransparentMesh: 0
+--- !u!1 &1795522560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1795522561}
+  - component: {fileID: 1795522565}
+  - component: {fileID: 1795522564}
+  - component: {fileID: 1795522563}
+  - component: {fileID: 1795522562}
+  m_Layer: 0
+  m_Name: LookTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1795522561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795522560}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.08, y: 1.656, z: 0.718}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 717469823}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1795522562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795522560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 640776480, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MSceneObject:
+    __isset:
+      Collider: 0
+      Mesh: 0
+      PhysicsProperties: 0
+      Properties: 1
+      Attachments: 0
+      Constraints: 0
+  TaskEditorLocalID: 0
+  TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
+  ShowCoordinateSystem: 0
+  Velocity: {x: 0, y: 0, z: 0}
+  UpdatePhysicsCurrentFrame: 1
+  OverrideColor: 0
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  IgnoreCollision: 0
+  TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
+  Type: 0
+  Tool: 
+  InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
+  FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
+  IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
+  Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
+--- !u!65 &1795522563
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795522560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1795522564
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795522560}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1795522565
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795522560}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1809906464
 GameObject:
   m_ObjectHideFlags: 0
@@ -5896,7 +6214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 50c8e4fdc5aaf114089bf33aef85f75a, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 50c8e4fdc5aaf114089bf33aef85f75a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5969,11 +6287,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -5981,12 +6301,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &2047179201
 GameObject:
   m_ObjectHideFlags: 0
@@ -6068,11 +6398,13 @@ MonoBehaviour:
       Collider: 0
       Mesh: 0
       PhysicsProperties: 0
-      Properties: 0
+      Properties: 1
       Attachments: 0
       Constraints: 0
   TaskEditorLocalID: 0
   TaskEditorID: 0
+  selectedConstraint: -1
+  ConstraintsFile: 
   ShowCoordinateSystem: 0
   Velocity: {x: 0, y: 0, z: 0}
   UpdatePhysicsCurrentFrame: 1
@@ -6080,12 +6412,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 0, a: 0}
   IgnoreCollision: 0
   TransferMesh: 0
+  ghostMesh: {fileID: 0}
+  editorSceneZoom: 10
   Type: 0
   Tool: 
   InitialLocation: {fileID: 0}
+  InitialLocationConstraint: 
   FinalLocation: {fileID: 0}
+  FinalLocationConstraint: 
   IsLocatedAt: {fileID: 0}
+  RDF: 
+  StationRef: 0
+  GroupRef: 0
   Constraints: []
+  MinXYZ: {x: 1, y: 0.2, z: 0.1}
+  MaxXYZ: {x: 1, y: 0.5, z: 0.1}
+  Rotation: {x: 0, y: 0, z: 0}
 --- !u!23 &2055630622
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6301,7 +6643,7 @@ PrefabInstance:
     - target: {fileID: 7303811505555683920, guid: 06afd2fd43af462479bab8fdba9ac521,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7303811505555683920, guid: 06afd2fd43af462479bab8fdba9ac521,
         type: 3}
@@ -6385,104 +6727,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06afd2fd43af462479bab8fdba9ac521, type: 3}
---- !u!1001 &948265043918944285
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 717469823}
-    m_Modifications:
-    - target: {fileID: 948265045518306060, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 948265045518306060, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 948265045518306060, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 948265045518306060, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 948265045518306060, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 948265045518306060, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 948265045518306060, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 948265045518306060, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 948265045518306060, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 948265045518306060, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 948265045518306060, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 948265045518306061, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: m_Name
-      value: Avatar
-      objectReference: {fileID: 0}
-    - target: {fileID: 948265045518306063, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: gameJointPrefab
-      value: 
-      objectReference: {fileID: 100000, guid: dacacc1ffcc7bbd408e07417a076d01d, type: 3}
-    - target: {fileID: 948265045518306063, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: AddBoneSceneObjects
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 948265045518306063, guid: 9696c76540f925f488848d37521b7f5e,
-        type: 3}
-      propertyPath: UseRemoteCoSimulation
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 948265045518306062, guid: 9696c76540f925f488848d37521b7f5e, type: 3}
-    - {fileID: 948265045518306063, guid: 9696c76540f925f488848d37521b7f5e, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: 9696c76540f925f488848d37521b7f5e, type: 3}
---- !u!4 &7341640644656884271 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 948265045518306060, guid: 9696c76540f925f488848d37521b7f5e,
-    type: 3}
-  m_PrefabInstance: {fileID: 948265043918944285}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7341640644656884273 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 948265045518306061, guid: 9696c76540f925f488848d37521b7f5e,
-    type: 3}
-  m_PrefabInstance: {fileID: 948265043918944285}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7341640644656884274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6518,55 +6762,7 @@ MonoBehaviour:
   m_Script: {fileID: 716406510, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LocalMaxMMIAvatarId: 2
   FrameID: 0
   HistoryBufferSize: 20
   SimulationTime: 0
---- !u!114 &7341640644656884276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7341640644656884273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1240988613, guid: f966e4a8a42bc7b428fad187671fc2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Joints: []
-  RootTransform: {fileID: 7341640644656884271}
-  Pelvis: {fileID: 1649885968}
-  UseVirtualRoot: 1
-  UseSkeletonVisualization: 1
-  gameJointPrefab: {fileID: 100000, guid: dacacc1ffcc7bbd408e07417a076d01d, type: 3}
-  animatorReference: {fileID: 0}
-  ConfigurationFilePath: configurations/avatar.mos
-  UseRemoteCoSimulation: 0
-  RemoteCoSimulationName: 
-  AddBoneSceneObjects: 0
-  Timeout: 30
-  AllowRemoteCoSimulationAccess: 1
-  RemoteCoSimulationAccessPort: 9011
-  RemoteCoSimulationAccessAddress: 127.0.0.1
-  Behavior: {fileID: 0}
-  LastPosture:
-    __isset:
-      PartialJointList: 0
-  MAvatar:
-    __isset:
-      SceneObjects: 0
-      Properties: 0
-  MMUMotionTypesToLoad: []
-  LoadRetargetingConfiguration: 1
---- !u!114 &7341640644656884277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7341640644656884273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33894559181a4ee41a3c10b2e14afa31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
