@@ -31,6 +31,7 @@ using Thrift.Transport;
 using UnityEngine;
 using UnityEngine.Networking;
 
+[ExecuteInEditMode]
 [RequireComponent(typeof(MMIAvatar))]
 public class AJANAgent : MonoBehaviour
 {

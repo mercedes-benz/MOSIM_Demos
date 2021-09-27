@@ -33,9 +33,9 @@
             },
             "ID": "9",
             "Position": {
-              "X": 0.2203020304441452,
-              "Y": 0.00091552734375,
-              "Z": -0.14999961853027344
+              "X": -0.0075880046933889389,
+              "Y": 0.00076198577880859375,
+              "Z": -0.045000076293945313
             },
             "Rotation": {
               "X": 0.0,
@@ -63,9 +63,39 @@
             },
             "ID": "9",
             "Position": {
-              "X": -0.22865571081638336,
-              "Y": 0.003650665283203125,
-              "Z": -0.14999961853027344
+              "X": -0.15530113875865936,
+              "Y": -0.016945838928222656,
+              "Z": -0.045000076293945313
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0
+            },
+            "Parent": "9"
+          },
+          "TranslationConstraint": null,
+          "RotationConstraint": null,
+          "WeightingFactor": 0.0
+        },
+        {
+          "__isset": {
+            "ParentToConstraint": true,
+            "TranslationConstraint": false,
+            "RotationConstraint": false,
+            "WeightingFactor": false
+          },
+          "ParentObjectID": "9",
+          "ParentToConstraint": {
+            "__isset": {
+              "Parent": true
+            },
+            "ID": "9",
+            "Position": {
+              "X": 0.14923073351383209,
+              "Y": -0.024022102355957031,
+              "Z": -0.045000076293945313
             },
             "Rotation": {
               "X": 0.0,
