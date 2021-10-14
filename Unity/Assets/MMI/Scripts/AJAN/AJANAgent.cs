@@ -139,13 +139,6 @@ public class AJANAgent : MonoBehaviour
         graph.Append(avatar + " " + "<http://www.dfki.de/mosim-ns#isLocatedAt>" + " " + "<http://www.dfki.de/mosim-ns#InitPosition>" + ".");
         if(Report)
             graph.Append(avatar + " " + "<http://www.ajan.de/ajan-ns#agentReportURI> 'http://localhost:4202/report'^^<http://www.w3.org/2001/XMLSchema#anyURI> .");
-        // TODO: Commented to fix error
-        if (TaskList && HLTE != null && setWorkerId())
-        {
-            graph.Append(avatar + " " + "<http://www.dfki.de/mosim-ns#tokenHLTE>" + " " + "'" + HLTE.accessToken + "'^^<http://www.w3.org/2001/XMLSchema#string>" + ".");
-            graph.Append(avatar + " " + "<http://www.dfki.de/mosim-ns#workerId>" + " " + "'" + WorkerId + "'^^<http://www.w3.org/2001/XMLSchema#int>" + ".");
-            graph.Append(avatar + " " + "<http://www.dfki.de/mosim-ns#worksOn>" + " " + "'" + HLTE.URLTaskList() + "'^^<http://www.w3.org/2001/XMLSchema#anyURI>" + ".");
-        }
 
         setSceneInfos(graph);
         setSceneWriteInfos(graph);
@@ -153,6 +146,20 @@ public class AJANAgent : MonoBehaviour
         setRegistryInfos(graph);
         setCosimInfos(graph);
 
+        return graph.ToString();
+    }
+
+    private string getTaskList()
+    {
+        StringBuilder graph = new StringBuilder();
+        string avatar = "<127.0.0.1:9000/avatars/" + name + ">";
+        // TODO: Commented to fix error
+        if (TaskList && HLTE != null && setWorkerId())
+        {
+            graph.Append(avatar + " " + "<http://www.dfki.de/mosim-ns#tokenHLTE>" + " " + "'" + HLTE.accessToken + "'^^<http://www.w3.org/2001/XMLSchema#string>" + ".");
+            graph.Append(avatar + " " + "<http://www.dfki.de/mosim-ns#workerId>" + " " + "'" + WorkerId + "'^^<http://www.w3.org/2001/XMLSchema#int>" + ".");
+            graph.Append(avatar + " " + "<http://www.dfki.de/mosim-ns#worksOn>" + " " + "'" + HLTE.URLTaskList() + "'^^<http://www.w3.org/2001/XMLSchema#anyURI>" + ".");
+        }
         return graph.ToString();
     }
 
@@ -249,7 +256,10 @@ public class AJANAgent : MonoBehaviour
         {
             MRDFGraph knowledge = new MRDFGraph();
             knowledge.ContentType = "text/turtle";
-            knowledge.Graph = "_:test <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource> .";
+            string graph = getTaskList();
+            if (graph == "")
+                graph = "_:test <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource> .";
+            knowledge.Graph = graph;
             AgentURI = client.ExecuteAgent(name, AJANExecute, knowledge);
         }
         finally
