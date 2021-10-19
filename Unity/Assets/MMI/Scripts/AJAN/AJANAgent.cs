@@ -168,12 +168,14 @@ public class AJANAgent : MonoBehaviour
         bool available = false;
         ulong avatarId = 0;
         List<HighLevelTaskEditor.TJsonAvatars> jsonAvatar = HLTE.avatarJson;
+        Debug.Log("Station: " + HLTE.stationID);
         foreach (HighLevelTaskEditor.TJsonAvatars avatar in jsonAvatar)
         {
             if (avatar.avatar == name)
             {
                 avatarId = avatar.id;
                 available = true;
+                Debug.Log("Avatar ID: " + avatarId);
                 break;
             }
         }
@@ -182,9 +184,10 @@ public class AJANAgent : MonoBehaviour
             List<HighLevelTaskEditor.TJsonWorkers> jsonWorkers = HLTE.workersJson;
             foreach (HighLevelTaskEditor.TJsonWorkers worker in jsonWorkers)
             {
-                if (worker.avatarid == avatarId && worker.simulate)
+                if (worker.avatarid == avatarId && worker.simulate && worker.stationid == HLTE.stationID)
                 {
                     WorkerId = (int)worker.id;
+                    Debug.Log("Worker ID: " + WorkerId);
                     return available;
                 }
             }

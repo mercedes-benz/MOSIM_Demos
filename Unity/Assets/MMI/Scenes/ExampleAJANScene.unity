@@ -14449,7 +14449,7 @@ MonoBehaviour:
   photoCamera: {fileID: 0}
   target: {fileID: 0}
   tasEditorProjectName: My project
-  PictureUploadProgress: -1
+  PictureUploadProgress: 101
   gltfexporter: {fileID: 1635182286}
   cameraScript: {fileID: 534669908}
   stationsLoaded: 1
@@ -14470,13 +14470,13 @@ MonoBehaviour:
     stationid: 17
     avatarid: 0
     worker: Default worker
-    simulate: 1
+    simulate: 0
     syncstatus: 2
   - id: 101
     stationid: 17
     avatarid: 0
     worker: Fritz
-    simulate: 1
+    simulate: 0
     syncstatus: 2
   - id: 15
     stationid: 18
