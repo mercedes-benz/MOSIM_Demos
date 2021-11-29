@@ -1,4 +1,7 @@
 <!-- SPDX-License-Identifier: MIT -->
+
+# :warning: This project is no longer maintained and is archived.
+
 # My Project
 
 ## Intended Usage
